@@ -1,6 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import './home.css';
-import Carousel from 'react-bootstrap/Carousel';
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
 
 export default function HomePage() {
     return (<><nav className="atendimentos">
@@ -16,6 +20,7 @@ export default function HomePage() {
         <div className="blog">
             <p>Blog</p>
         </div>
-    </nav></>
+    </nav>
+    </>
     )
 }
