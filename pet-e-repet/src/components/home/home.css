@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+.atendimentos {
+    padding: 1em 22em 0 22em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banho-e-tosa {
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.44369rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 1px solid #C4C1C9;
+    background: #F4F2F8;
+    color: #243387;
+    font-family: Mochiy Pop One;
+    font-size: 1rem;
+}
+
+.adestramento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.44369rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 1px solid #C4C1C9;
+    background: #F4F2F8;
+    color: #8D7CB4;
+    font-family: Mochiy Pop One;
+    font-size: 1rem;
+}
+
+.adote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.44369rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 1px solid #C4C1C9;
+    background: #F4F2F8;
+    color: #CB445B;
+    font-family: Mochiy Pop One;
+    font-size: 1rem;
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.44369rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 1px solid #C4C1C9;
+    background: #F4F2F8;
+    color: #DC7923;
+    font-family: Mochiy Pop One;
+    font-size: 1rem;
+}
