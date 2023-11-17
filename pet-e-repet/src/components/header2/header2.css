@@ -1,0 +1,27 @@
+header {
+    width: 100%;
+    height: 5.25rem;
+    display: flex;
+    align-items: center;
+    background: #243387;
+}
+
+.voltar {
+    width: 7%;
+    color: white;
+    display: flex;
+    align-items: center;
+    float: left;
+    justify-content: space-between;
+}
+
+.seta {
+    width: 30%;
+}
+
+.logo {
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}
