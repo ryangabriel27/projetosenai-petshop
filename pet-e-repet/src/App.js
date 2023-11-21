@@ -4,17 +4,13 @@ import Header from './components/header/header.js';
 import HomePage from './components/home/homePage.js';
 import Login from './pages/login.js';
 import Header2 from './components/header2/header2.js';
+import Slider from './components/carousel/slider.js';
+import InfoHome from './components/infoHome/infoHome.js';
+import Footer from './components/footer/footer.js';
 import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
-  // let header;
-  // switch (window.location.pathname) {
-  //   case '/': header = <Header />
-  //     break;
-  //   case '/login': header = <Header2 />
-  //     break;
-  // }
   return <>
     <Routes>
       <Route path='/' element={<Header />} />
@@ -24,6 +20,18 @@ function App() {
       <Route path='/' element={<HomePage />} />
       <Route path='/login' element={<Login />} />
     </Routes>
+<<<<<<< HEAD
+=======
+    <Routes>
+      <Route path='/' element={<Slider />} />
+    </Routes>
+    <Routes>
+      <Route path='/' element={<InfoHome />} />
+    </Routes>
+    <Routes>
+      <Route path='/' element={<Footer />}></Route>
+    </Routes>
+>>>>>>> 3fe472b521b9b2a15c1e22f6d954fdafef47ceb3
   </>;
 }
 
