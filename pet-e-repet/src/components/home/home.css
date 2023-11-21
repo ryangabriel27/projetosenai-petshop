@@ -1,70 +1,76 @@
 body {
     margin: 0;
 }
+
 .atendimentos {
-    padding: 1em 22em 0 22em;
+    margin: 1em;
+    padding: 0px 450px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .banho-e-tosa {
-    margin:0;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10.44369rem;
+    width: 13.44369rem;
     height: 3.4375rem;
     flex-shrink: 0;
     border-radius: 1.25rem;
     border: 1px solid #C4C1C9;
     background: #F4F2F8;
     color: #243387;
-    font-family: Mochiy Pop One;
-    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .adestramento {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10.44369rem;
+    width: 13.44369rem;
     height: 3.4375rem;
     flex-shrink: 0;
     border-radius: 1.25rem;
     border: 1px solid #C4C1C9;
     background: #F4F2F8;
     color: #8D7CB4;
-    font-family: Mochiy Pop One;
-    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .adote {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10.44369rem;
+    width: 13.44369rem;
     height: 3.4375rem;
     flex-shrink: 0;
     border-radius: 1.25rem;
     border: 1px solid #C4C1C9;
     background: #F4F2F8;
     color: #CB445B;
-    font-family: Mochiy Pop One;
-    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .blog {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10.44369rem;
+    width: 13.44369rem;
     height: 3.4375rem;
     flex-shrink: 0;
     border-radius: 1.25rem;
     border: 1px solid #C4C1C9;
     background: #F4F2F8;
     color: #DC7923;
-    font-family: Mochiy Pop One;
-    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
