@@ -7,7 +7,6 @@ header {
 }
 
 .voltar {
-    width: 7%;
     color: white;
     display: flex;
     align-items: center;
@@ -20,8 +19,7 @@ header {
 }
 
 .logo {
-    width: 93%;
-    display: flex;
-    justify-content: center;
+    width: 78%;
+    text-align: center;
     margin: 0px auto;
 }
