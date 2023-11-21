@@ -1,11 +1,6 @@
 import React from "react";
 import './home.css';
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/css';
-
 export default function HomePage() {
     return (<><nav className="atendimentos">
         <div className="banho-e-tosa">
