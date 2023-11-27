@@ -8,11 +8,10 @@ body {
     margin: 0;
 }
 
-header {
+.fullHeader {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
 }
 
 .cabecalho {
