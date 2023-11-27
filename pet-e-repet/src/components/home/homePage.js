@@ -1,4 +1,6 @@
 import React from "react";
+import Slider from './carousel/slider.js';
+import InfoHome from './infoHome/infoHome.js';
 import './home.css';
 
 export default function HomePage() {
@@ -16,6 +18,8 @@ export default function HomePage() {
             <p>Blog</p>
         </div>
     </nav>
+    {<Slider />}
+    {<InfoHome />}
     </>
     )
 }
