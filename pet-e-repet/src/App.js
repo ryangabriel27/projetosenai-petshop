@@ -20,8 +20,6 @@ function App() {
       <Route path='/' element={<HomePage />} />
       <Route path='/login' element={<Login />} />
     </Routes>
-<<<<<<< HEAD
-=======
     <Routes>
       <Route path='/' element={<Slider />} />
     </Routes>
@@ -31,7 +29,6 @@ function App() {
     <Routes>
       <Route path='/' element={<Footer />}></Route>
     </Routes>
->>>>>>> 3fe472b521b9b2a15c1e22f6d954fdafef47ceb3
   </>;
 }
 

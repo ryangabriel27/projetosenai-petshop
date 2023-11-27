@@ -14,9 +14,7 @@ export default function header2() {
             </div>
         </Link>
         <div className="logo">
-            <h1>
                 <img src={logo} alt="logo-img" />
-            </h1>
         </div>
     </header>);
 }

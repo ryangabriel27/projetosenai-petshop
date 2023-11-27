@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 .main {
-    padding: 5px;
-    width: 80%;
-    height: 100%;
+    padding: 0px 40px 0px 30px;
+    width: 900px;
+    height: 600px;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .login {
@@ -56,7 +57,7 @@
 
 .inputBox input {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 3em;
     border: 1px solid #B2AFBA;
     background: #FFF;
@@ -78,4 +79,10 @@
     font-weight: bold;
     color: white;
     margin-left: 2em;
+}
+
+.cadastro{
+    width: 400px;
+    position: relative;
+    margin-left: 65em;
 }
