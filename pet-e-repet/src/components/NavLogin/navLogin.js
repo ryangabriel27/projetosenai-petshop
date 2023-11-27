@@ -1,5 +1,5 @@
 import React from "react";
-import './header2.css';
+import './navLogin.css';
 import logo from '../header/img/logo_e_wordmark.png';
 import { Link } from 'react-router-dom';
 

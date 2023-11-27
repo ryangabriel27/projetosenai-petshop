@@ -1,6 +1,7 @@
 import React from "react";
 import './home.css';
 
+
 export default function HomePage() {
     return (<><nav className="atendimentos">
         <div className="banho-e-tosa">
@@ -16,6 +17,7 @@ export default function HomePage() {
             <p>Blog</p>
         </div>
     </nav>
+    
     </>
     )
 }
