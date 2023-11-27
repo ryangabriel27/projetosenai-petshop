@@ -1,4 +1,6 @@
 import React from "react";
+import Slider from './carousel/slider.js';
+import InfoHome from './infoHome/infoHome.js';
 import './home.css';
 
 
@@ -17,7 +19,12 @@ export default function HomePage() {
             <p>Blog</p>
         </div>
     </nav>
+<<<<<<< HEAD
     
+=======
+    {<Slider />}
+    {<InfoHome />}
+>>>>>>> db7bdcc36626be1101025be977cdb56d8ade38e3
     </>
     )
 }
