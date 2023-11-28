@@ -5,15 +5,14 @@ import HomePage from './components/home/homePage.js';
 import Login from './pages/login.js';
 import Footer from './components/footer/footer.js';
 import { Routes, Route } from 'react-router-dom';
-import navLogin from './components/NavLogin/navLogin.js';
-
+import NavLogin from './components/navLogin/navLogin.js';
 
 function App() {
   return <>
     {/* -- Routing das headers -- */}
     <Routes>
       <Route path='/' element={<Header />} />
-      <Route path='/login' element={<navLogin />} />
+      <Route path='/login' element={<NavLogin />} />
     </Routes>
     {/* -- Routing das páginas -- */}
     <Routes>

@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-header {
+.homeHeader {
     width: 100%;
     display: flex;
     flex-direction: column;

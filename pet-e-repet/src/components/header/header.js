@@ -5,7 +5,7 @@ import logo from './img/logo_e_wordmark.png';
 
 export default function Header() {
     return (
-        <header>
+        <header className="homeHeader">
             <nav class="cabecalho">
                 <Link to="/">
                     <div class="logo">
