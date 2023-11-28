@@ -3,7 +3,7 @@ import './navLogin.css';
 import logo from '../header/img/logo_e_wordmark.png';
 import { Link } from 'react-router-dom';
 
-export default function header2() {
+export default function navLogin() {
     return (<header>
         <Link to="/">
             <div className="voltar">
@@ -14,7 +14,7 @@ export default function header2() {
             </div>
         </Link>
         <div className="logo">
-                <img src={logo} alt="logo-img" />
+            <img src={logo} alt="logo-img" />
         </div>
     </header>);
 }
