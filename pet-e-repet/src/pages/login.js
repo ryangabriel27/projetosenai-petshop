@@ -27,7 +27,7 @@ export default function login() {
             <div className='cadastro'>
                 <div style={{ width: 500, height: 129, left: 0, top: 0, color: '#090C20', fontSize: 35, fontFamily: 'Mochiy Pop One', fontWeight: '400', wordWrap: 'break-word' }}>Criar uma conta é rápido, fácil e gratuito!</div>
                 <div style={{ width: 400, height: 197, left: 0, top: 110, color: '#243387', fontSize: 23, fontFamily: 'Manrope', fontWeight: '400', wordWrap: 'break-word' }}>Com a sua conta da P&R você tem acesso a Ofertas exclusivas, descontos, pode criar e gerenciar a sua Assinatura P&R, acompanhar os seus pedidos e muito mais!</div>
-                <Link to=''><div style={{ width: 401, height: 39, left: 0, top: 267, color: '#CB445B', fontSize: 35, fontFamily: 'Mochiy Pop One', fontWeight: '400', wordWrap: 'break-word', textDecoration: 'underline' }}>Cadastre-se</div></Link>
+                <Link to='/cadastro'><div style={{ width: 401, height: 39, left: 0, top: 267, color: '#CB445B', fontSize: 35, fontFamily: 'Mochiy Pop One', fontWeight: '400', wordWrap: 'break-word', textDecoration: 'underline' }}>Cadastre-se</div></Link>
             </div>
         </div>);
 }

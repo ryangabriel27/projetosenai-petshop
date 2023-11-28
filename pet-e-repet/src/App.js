@@ -6,6 +6,7 @@ import Login from './pages/login.js';
 import Footer from './components/footer/footer.js';
 import { Routes, Route } from 'react-router-dom';
 import NavLogin from './components/navLogin/navLogin.js';
+import Cadastro from './pages/cadastro.js';
 
 function App() {
   return <>
@@ -13,11 +14,13 @@ function App() {
     <Routes>
       <Route path='/' element={<Header />} />
       <Route path='/login' element={<NavLogin />} />
+      <Route path='/cadastro' element={<NavLogin />} />
     </Routes>
     {/* -- Routing das páginas -- */}
     <Routes>
       <Route path='/' element={<HomePage />} />
       <Route path='/login' element={<Login />} />
+      <Route path='/cadastro' element={<Cadastro />} />
     </Routes>
     {/* -- Footer -- */}
     <Footer />

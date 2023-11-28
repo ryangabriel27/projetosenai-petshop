@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.cadastro-main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cadastro-foto {
+    width: 40%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-form {
+    display: flex;
+    width: 700px;
+    height: 500px;
+    padding: 1em 3em 3em 3em;
+    background-color: #EFEFEF;
+    border: 1.5px #B2AFBA solid;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-title {
+    text-align: center;
+    font-family: 'Mochiy Pop One';
+    font-size: 18px;
+}
+
+.form--cadastro {
+    text-align: center;
+}
+
+.inputs input {
+    width: 500px;
+    height: 2.5em;
+    border: 1px solid #B2AFBA;
+    background: #FFF;
+    border-radius: 2.8em;
+    padding: 7px;
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.inputs button {
+    background: #243387;
+    position: relative;
+    width: 80%;
+    height: 2.5em;
+    border-radius: 2.8em;
+    border: 0;
+    padding: 7px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    margin-left: 2em;
+}
+
+.form-text {
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    color: #CB445B;
+}

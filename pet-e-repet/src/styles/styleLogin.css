@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 .main {
+    margin-top: 2em;
     padding: 0px 40px 0px 30px;
     width: 900px;
     height: 600px;
