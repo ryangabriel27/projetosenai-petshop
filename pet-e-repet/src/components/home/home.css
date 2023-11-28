@@ -1,9 +1,7 @@
-body {
-    margin: 0;
-}
+
 
 .atendimentos {
-    margin: 1em;
+    margin-top: 3.3em;
     padding: 0px 450px;
     display: flex;
     justify-content: space-evenly;
@@ -73,4 +71,8 @@ body {
     font-family: 'Fredoka', sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
+}
+
+.carrosel{
+    margin-top: 1em;
 }
