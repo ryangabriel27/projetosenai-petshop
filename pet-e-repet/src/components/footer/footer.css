@@ -1,5 +1,61 @@
-.footerAll svg{
+.footerAll svg {
     margin-top: 0px;
     margin-bottom: -26px;
     width: 100%;
+}
+
+.textFooter {
+    background-color: #8D7CB4;
+    margin: -25px 0px 0px 0px;
+}
+
+.footerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #090C20;
+}
+
+.footerSubTexts {
+    display: flex;
+    background-color: #8D7CB4;
+    padding: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footerSub1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 60px;
+    padding: 0px 0px;
+    font-family: 'Product Sans', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    color: #243387;
+}
+
+.footerSub1 h5 {
+    margin-block-end: 0.5em;
+}
+
+.footerSub2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 60px;
+    padding: 0px 0px;
+    font-family: 'Product Sans', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    color: #243387;
+}
+
+.footerSub2 h5 {
+    margin-block-end: 0.5em;
 }

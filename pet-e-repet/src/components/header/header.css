@@ -14,6 +14,10 @@ body {
     flex-direction: column;
 }
 
+.icons {
+    cursor: pointer;
+}
+
 .cabecalho {
     display: flex;
     align-items: center;
@@ -112,7 +116,7 @@ body {
     flex-shrink: 0;
 }
 
-.cachorro-link {
+.animais-link {
     display: flex;
     width: 10.75rem;
     justify-content: center;
@@ -123,79 +127,14 @@ body {
     font-weight: 500;
     font-size: 1.1rem;
     text-decoration: none;
+    transition: 0.5s;
 }
 
-.gato-link {
-    display: flex;
-    width: 10.75rem;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #fff;
-    text-align: center;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    font-size: 1.1rem;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.passaro-link {
-    display: flex;
-    width: 10.75rem;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #fff;
-    text-align: center;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    font-size: 1.1rem;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.peixe-link {
-    display: flex;
-    width: 10.75rem;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #fff;
-    text-align: center;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    font-size: 1.1rem;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.outros-link {
-    display: flex;
-    width: 10.75rem;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #fff;
-    text-align: center;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    font-size: 1.1rem;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.casaelazer-link {
-    display: flex;
-    width: 10.75rem;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #fff;
-    text-align: center;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    font-size: 1.1rem;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
+.animais-link:hover{
+    background-color: #243387;
+    border-radius: 8px;
+    padding: -102px -102px;
+    margin: -20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
 }

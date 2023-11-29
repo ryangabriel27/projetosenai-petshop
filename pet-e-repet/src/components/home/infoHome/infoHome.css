@@ -4,6 +4,10 @@
     width: 100%;
 }
 
+.infoHome {
+    margin-bottom: 50px;
+}
+
 .infoInside {
     background-color: #8D7CB4;
     margin: 0px;
@@ -26,6 +30,7 @@
     display: flex;
     align-items: center;
     align-content: center;
+    justify-content: center;
 }
 
 #topText{
