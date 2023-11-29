@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/styleLogin.css';
 import userIcon from '../icons/userIcon.svg';
 import senhaIcon from '../icons/senhaIcon.svg';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
-export default function login() {
+export default function Login() {
+
+    const [cpf, setCpf] = useState('');
+    const [senha, setSenha] = useState('');
+
+    const doLogin = async (e) => {
+        e.preventDefault();
+
+        console.log(cpf, senha);
+        const res = await axios.post()
+    }
+
     return (
         <div className='main'>
             <div className="login">
@@ -13,13 +25,13 @@ export default function login() {
                     <p>Use os campos abaixo para entra na sua conta P&R</p>
                     <form class="form" action='POST'>
                         <div class="inputBox">
-                            <input type="text" placeholder='Digite seu CPF' required style={{ backgroundImage: `url(${userIcon})`, backgroundRepeat: "no-repeat", backgroundPosition: "20px 18px", padding: "12px 45px 12px 60px" }} />
+                            <input type="text" placeholder='Digite seu CPF' onChange={(e) => setCpf(e.target.value)} required style={{ backgroundImage: `url(${userIcon})`, backgroundRepeat: "no-repeat", backgroundPosition: "20px 18px", padding: "12px 45px 12px 60px" }} />
                         </div>
                         <div className="inputBox">
-                            <input type="password" placeholder='Digite sua senha' required style={{ backgroundImage: `url(${senhaIcon})`, backgroundRepeat: "no-repeat", backgroundPosition: "20px 18px", padding: "12px 45px 12px 60px" }} />
+                            <input type="password" placeholder='Digite sua senha' onChange={(e) => setSenha(e.target.value)} required style={{ backgroundImage: `url(${senhaIcon})`, backgroundRepeat: "no-repeat", backgroundPosition: "20px 18px", padding: "12px 45px 12px 60px" }} />
                         </div>
                         <div class="inputBox buttonEnviar">
-                            <button type="button">Login</button>
+                            <button type="submit" onClick={(e) => doLogin(e)}>Login</button>
                         </div>
                     </form>
                 </div>
