@@ -1,11 +1,10 @@
-
-
 .atendimentos {
     margin-top: 3.3em;
     padding: 0px 450px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    cursor: pointer;
 }
 
 .atendimentosButton {
