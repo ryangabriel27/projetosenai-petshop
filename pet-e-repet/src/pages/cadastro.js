@@ -5,6 +5,7 @@ import userIcon from '../icons/userIcon.svg';
 import senhaIcon from '../icons/senhaIcon.svg';
 import cepIcon from '../icons/cepIcon.svg';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
 
 export default function Cadastro() {
 
