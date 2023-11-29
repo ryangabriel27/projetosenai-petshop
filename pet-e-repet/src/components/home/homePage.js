@@ -6,21 +6,21 @@ import './home.css';
 
 export default function HomePage() {
     return (<>
-        <nav className="atendimentos">
-            <div className="banho-e-tosa">
+        <div className="atendimentos">
+            <div className="atendimentosButton" id="banhoETosa">
                 <p>Banho & Tosa</p>
             </div>
-            <div className="adestramento">
+            <div className="atendimentosButton" id="adestramentos">
                 <p>Adestramento</p>
             </div>
-            <div className="adote">
+            <div className="atendimentosButton" id="adote">
                 <p>Adote</p>
             </div>
-            <div className="blog">
+            <div className="atendimentosButton" id="blog">
                 <p>Blog</p>
             </div>
-        </nav>
-        <div className="carrosel">
+        </div>
+        <div className="carrossel">
             <Slider />
         </div>
         <InfoHome />

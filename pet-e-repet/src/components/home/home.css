@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.banho-e-tosa {
+.atendimentosButton {
     margin: 0;
     display: flex;
     align-items: center;
@@ -17,62 +17,66 @@
     height: 3.4375rem;
     flex-shrink: 0;
     border-radius: 1.25rem;
-    border: 1px solid #C4C1C9;
+    border: 1px solid #00000031;
     background: #F4F2F8;
-    color: #243387;
     font-family: 'Fredoka', sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
-.adestramento {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 13.44369rem;
-    height: 3.4375rem;
-    flex-shrink: 0;
-    border-radius: 1.25rem;
-    border: 1px solid #C4C1C9;
-    background: #F4F2F8;
-    color: #8D7CB4;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-}
-
-.adote {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 13.44369rem;
-    height: 3.4375rem;
-    flex-shrink: 0;
-    border-radius: 1.25rem;
-    border: 1px solid #C4C1C9;
-    background: #F4F2F8;
-    color: #CB445B;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-}
-
-.blog {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 13.44369rem;
-    height: 3.4375rem;
-    flex-shrink: 0;
-    border-radius: 1.25rem;
-    border: 1px solid #C4C1C9;
-    background: #F4F2F8;
-    color: #DC7923;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-}
-
-.carrosel{
+.carrossel{
     margin-top: 1em;
+}
+
+#banhoETosa{
+    color: #243387;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+#banhoETosa:hover{
+    background-color: #243387;
+    color: #FFF;
+    letter-spacing: 1px;
+    margin: 10px;
+    font-size: 1.7rem;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+#adestramentos{
+    color: #8D7CB4;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+#adestramentos:hover{
+    background-color: #8D7CB4;
+    color: #FFF;
+    letter-spacing: 1px;
+    margin: 10px;
+    font-size: 1.7rem;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+#adote{
+    color: #CB445B;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+#adote:hover{
+    background-color: #CB445B;
+    color: #FFF;
+    letter-spacing: 1px;
+    margin: 10px;
+    font-size: 1.7rem;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+#blog{
+    color: #DC7923;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+#blog:hover{
+    background-color: #DC7923;
+    color: #FFF;
+    letter-spacing: 1px;
+    margin: 10px;
+    font-size: 1.7rem;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
