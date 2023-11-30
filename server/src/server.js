@@ -1,6 +1,6 @@
 require("dotenv").config(); //Configuração .env
 
-const db = require("./db");
+const db = require("./db"); // Config do banco de
 const express = require('express');
 const cors = require('cors');
 
@@ -30,9 +30,14 @@ app.get('/clientes', async (req, res) => {
     res.json(clientes);
 })
 
-app.post("/cadastroCliente", async (req, res) => {
-    await db.cadastrarCliente(req.body);
-    res.sendStatus(201) // Cadastro feito com sucesso!
+app.post("/cadastrar", async (req, res) => {
+    
+    const cadCpf = req.body.cadastroCpf;
+    const cadUsuario = req.body.cadastroUsuario;
+    const cadSenha = req.body.cadastroSenha;
+    const cadCep = req.body.cadastroCEP;
+
+    await db.cadastrarCliente(cadCpf, cadUsuario, cadSenha, cadCep);
 })
 
 
