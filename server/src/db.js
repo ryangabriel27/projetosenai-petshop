@@ -41,17 +41,18 @@ async function listarCliente(cpf) {
 
 async function cadastrarCliente(cpf, usuario, senha, cep) {
     const client = await connect();
-    await client.query("SELECT * FROM clientes WHERE cpf = $1", [cpf], (err, result) => {
+    await client.query("SELECT * FROM clientes WHERE cpf = ?", [cpf], (err, result) => {
         if (err) {
             res.send(err);
         }
         if (result.length == 0) {
-            const sql = "INSERT INTO clientes(cpf, nome, senha, cep) VALUES ($1, $2, $3, $4)";
+            const sql = "INSERT INTO clientes(cpf, nome, senha, cep) VALUES (?, ?, ?, ?)";
             client.query(sql, [cpf, usuario, senha, cep], (err, result) => {
                 if (err) {
                     res.send(err)
+                } else {
+                    res.send({ msg: "cadastrado com sucesso!" });
                 }
-                res.send({ msg: "cadastrado com sucesso!" });
             });
         }
     });

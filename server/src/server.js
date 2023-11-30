@@ -31,14 +31,33 @@ app.get('/clientes', async (req, res) => {
 })
 
 app.post("/cadastrar", async (req, res) => {
-    
+
     const cadCpf = req.body.cadastroCpf;
     const cadUsuario = req.body.cadastroUsuario;
     const cadSenha = req.body.cadastroSenha;
     const cadCep = req.body.cadastroCEP;
 
-    await db.cadastrarCliente(cadCpf, cadUsuario, cadSenha, cadCep);
-})
+    db.cadastrarCliente(cadCpf, cadUsuario, cadSenha, cadCep);
+    // db.query("SELECT * FROM clientes WHERE cpf = ?", [cadCpf], (err, result) => {
+    //     if (err) {
+    //         res.send(err);
+    //     }
+    //     if (result.length == 0) {
+    //         db.query( "INSERT INTO clientes(cpf, nome, senha, cep) VALUES (?,?,?,?)",
+    //             [cadCpf, cadUsuario, cadSenha, cadCep],
+    //             (error, response) => {
+    //                 if (err) {
+    //                     res.send(err);
+    //                 }
+
+    //                 res.send({ msg: "Usuário cadastrado com sucesso" });
+    //             }
+    //         );
+    //     } else {
+    //         res.send({ msg: "Email já cadastrado" });
+    //     }
+    // });
+});
 
 
 

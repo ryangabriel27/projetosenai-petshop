@@ -11,6 +11,7 @@ import * as yup from 'yup';
 export default function Cadastro() {
 
     const fazerCadastro = (values) => {
+        console.log(values)
         console.log("Cadastro")
         Axios.post("http://localhost:3001/cadastrar", {
             cadastroCpf: values.cadastroCpf,
