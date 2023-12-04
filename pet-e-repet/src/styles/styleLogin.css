@@ -41,7 +41,9 @@ body {
 
 .login .content h2 {
     font-size: 45px;
+    font-size: 45px;
     color: #090C20;
+    font-family: 'Fredoka';
     font-family: 'Fredoka';
 }
 
@@ -65,6 +67,7 @@ body {
     padding: 7px;
     font-weight: 500;
     font-size: 1em;
+    font-family: 'Product Sans';
     font-family: 'Product Sans';
 }
 

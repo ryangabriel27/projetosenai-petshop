@@ -28,8 +28,8 @@ export default function Login() {
     })
 
     return (
-        <div className='main'>
-            <div className="login">
+        <div class="main">
+            <div class="login">
                 <div class="content">
                     <h2>Fazer Login</h2>
                     <p>Use os campos abaixo para entra na sua conta P&R</p>

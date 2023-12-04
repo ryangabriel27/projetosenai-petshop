@@ -42,3 +42,9 @@
     position: relative;
     top: 10px;
 }
+
+@media screen and (min-width: 2220px) {
+    .infoHome svg {
+        width: 2220px;
+    }
+}

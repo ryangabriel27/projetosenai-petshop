@@ -19,6 +19,7 @@
     display: flex;
     width: 700px;
     height: 550px;
+    height: 550px;
     padding: 1em 3em 3em 3em;
     background-color: #EFEFEF;
     border: 1.5px #B2AFBA solid;
@@ -29,6 +30,7 @@
 
 .form-title {
     text-align: center;
+    font-family: 'Fredoka';
     font-family: 'Fredoka';
     font-size: 18px;
 }
