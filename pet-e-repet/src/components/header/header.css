@@ -54,6 +54,13 @@ body {
     flex-shrink: 0;
     border-radius: 2.875rem;
     background: #FFF;
+    transition: 0.5s;
+}
+.icon-pesquisa {
+    align-items: center;
+    height: 2rem;
+    flex-shrink: 0;
+    display: none;
 }
 
 .icon-lupa {
@@ -137,4 +144,35 @@ body {
     margin: -20px;
     letter-spacing: 2px;
     transition: 0.5s;
+}
+
+@media screen and (max-width:1440px) {
+    .barra-de-pesquisa {
+        width: 49.0625rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:1290px) {
+    .barra-de-pesquisa {
+        width: 39.0625rem;
+        transition: 0.5s;
+    }
+}
+@media screen and (max-width:1440px) {
+    .barra-de-pesquisa {
+        width: 49.0625rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .barra-de-pesquisa {
+        display: none;
+        transition: display 0.5s;
+    }
+    .icon-pesquisa {
+        display: flex;
+        transition: display 0.5s;
+    }
 }
