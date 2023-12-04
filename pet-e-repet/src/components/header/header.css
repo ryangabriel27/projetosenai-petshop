@@ -125,7 +125,6 @@ body {
 
 .animais-link {
     display: flex;
-    width: 10.75rem;
     justify-content: center;
     flex-shrink: 0;
     color: #fff;
@@ -166,14 +165,39 @@ body {
         transition: 0.5s;
     }
 }
-
 @media screen and (max-width:1080px) {
     .barra-de-pesquisa {
+        width: 19.0625rem;
+        transition: 0.5s;
+    }
+    .links{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .animais-link {
+        font-size: 12px;
+    }
+    .categorias {
+        justify-content: center;
+    }    
+}
+
+@media screen and (max-width:800px) {
+    .barra-de-pesquisa {
         display: none;
-        transition: display 0.5s;
+        transition: fallDown 0.5s;
     }
     .icon-pesquisa {
         display: flex;
-        transition: display 0.5s;
+        transition: fallDown 0.5s;
+    }
+    .categorias {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo{
+        display: none;
     }
 }
