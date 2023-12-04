@@ -1,17 +1,21 @@
-
+body {
+    font-family: 'Product Sans';
+}
 .main {
     margin-top: 2em;
-    padding: 0px 40px 0px 30px;
-    width: 900px;
     height: 600px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     flex-direction: row;
+    width: 100%;
+    margin: 0px -250px;
 }
 
 .login {
     position: absolute;
-    width: 400px;
+    width: 25%;
     background: #F4F2F8;
     border: 1px solid #D0CED4;
     display: flex;
@@ -37,9 +41,9 @@
 }
 
 .login .content h2 {
-    font-size: 2.5em;
+    font-size: 45px;
     color: #090C20;
-    font-family: Mochiy Pop One;
+    font-family: 'Fredoka';
 }
 
 
@@ -58,13 +62,14 @@
 .inputBox input {
     position: relative;
     width: 80%;
-    height: 3em;
+    height: 2.5em;
     border: 1px solid #B2AFBA;
     background: #FFF;
     border-radius: 2.8em;
     padding: 7px;
     font-weight: 500;
     font-size: 1em;
+    font-family: 'Product Sans';
 }
 
 .inputBox button {
