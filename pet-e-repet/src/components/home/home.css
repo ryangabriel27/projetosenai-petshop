@@ -79,3 +79,84 @@
     font-size: 1.7rem;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
+
+@media screen and (max-width:1440px) {
+    .atendimentos {
+        padding: 0px 200px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .atendimentos {
+        padding: 0px 150px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .atendimentos {
+        padding: 0px 100px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .atendimentos {
+        padding: 0px 50px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .atendimentos {
+        padding: 0px 25px;
+        transition: 0.5s;
+    }
+    .atendimentosButton {
+        width: 12.44369rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .atendimentosButton {
+        width: 11.44369rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .atendimentosButton {
+        width: 10.44369rem;
+        transition: 0.5s;
+    }
+
+    #banhoETosa:hover{
+        font-size: 1.7rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+    
+    #adestramentos:hover{
+        font-size: 1.7rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+    
+    #adote:hover{
+        font-size: 1.7rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+
+    #blog:hover{
+        font-size: 1.7rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .atendimentosButton {
+        width: 8.44369rem;
+        font-size: 19px;
+        transition: 0.5s;
+    }
+}
