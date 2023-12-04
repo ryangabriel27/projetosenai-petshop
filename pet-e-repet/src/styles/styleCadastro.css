@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
-
 .cadastro-main {
     width: 100%;
     height: 700px;
@@ -20,7 +18,7 @@
 .cadastro-form {
     display: flex;
     width: 700px;
-    height: 500px;
+    height: 550px;
     padding: 1em 3em 3em 3em;
     background-color: #EFEFEF;
     border: 1.5px #B2AFBA solid;
@@ -31,12 +29,29 @@
 
 .form-title {
     text-align: center;
-    font-family: 'Mochiy Pop One';
+    font-family: 'Fredoka';
     font-size: 18px;
 }
 
 .form--cadastro {
     text-align: center;
+}
+
+.formError {
+    display: block;
+    color: red;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.formError span {
+    font-family: 'Product Sans';
+}
+
+.inputBox {
+    font-family: 'Product Sans';
 }
 
 .inputs input {
@@ -49,6 +64,8 @@
     font-weight: 300;
     font-size: 1em;
     margin-bottom: 1em;
+    font-family: 'Product Sans';
+    transition: all 0.2s ease-in-out;
 }
 
 .inputs button {
@@ -70,4 +87,10 @@
     text-align: center;
     word-wrap: break-word;
     color: #CB445B;
+    font-family: 'Product Sans';
+}
+
+.buttonEnviar button {
+    font-family: 'Fredoka';
+    font-weight: 600;
 }

@@ -1,21 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/styleLogin.css';
 import userIcon from '../icons/userIcon.svg';
 import senhaIcon from '../icons/senhaIcon.svg';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as yup from 'yup';
 
 export default function Login() {
 
-    const [cpf, setCpf] = useState('');
-    const [senha, setSenha] = useState('');
+    const fazerLogin = (values) => {
+        console.log(values)
+        console.log("Login")
+        axios.post("http://localhost:3000/cadastrar", {
+            cadastroCpf: values.cadastroCpf,
+            cadastroUsuario: values.cadastroUsuario
+        }).then((data) => {
+            console.log(data);
 
-    const doLogin = async (e) => {
-        e.preventDefault();
+        });
+    };
 
-        console.log(cpf, senha);
-        const res = await axios.post()
-    }
+
+    const verificaLogin = yup.object().shape({  // Verifica os campos e informa ao usuário se há erros
+        loginCpf: yup.string().matches("[0-9]+", "O cpf deve conter apenas números").required("Este campo é obrigatório").min(11, "O cpf deve ter 11 dígitos").max(11, "O cpf deve ter 11 dígitos"),
+        loginSenha: yup.string().required("Este campo é obrigatório").min(5).max(200)
+    })
 
     return (
         <div className='main'>
@@ -23,23 +33,36 @@ export default function Login() {
                 <div class="content">
                     <h2>Fazer Login</h2>
                     <p>Use os campos abaixo para entra na sua conta P&R</p>
-                    <form class="form" action='POST'>
-                        <div class="inputBox">
-                            <input type="text" placeholder='Digite seu CPF' onChange={(e) => setCpf(e.target.value)} required style={{ backgroundImage: `url(${userIcon})`, backgroundRepeat: "no-repeat", backgroundPosition: "20px 18px", padding: "12px 45px 12px 60px" }} />
-                        </div>
-                        <div className="inputBox">
-                            <input type="password" placeholder='Digite sua senha' onChange={(e) => setSenha(e.target.value)} required style={{ backgroundImage: `url(${senhaIcon})`, backgroundRepeat: "no-repeat", backgroundPosition: "20px 18px", padding: "12px 45px 12px 60px" }} />
-                        </div>
-                        <div class="inputBox buttonEnviar">
-                            <button type="submit" onClick={(e) => doLogin(e)}>Login</button>
-                        </div>
-                    </form>
+                    <Formik
+                        initialValues={{}}
+                        onSubmit={fazerLogin}
+                        validationSchema={verificaLogin}>
+                        <Form class="form" action='POST'>
+                            <div class="inputBox">
+                                <Field type="text" placeholder='Digite seu CPF' name='loginCpf' id="loginCpf" required style={{ backgroundImage: `url(${userIcon})`, backgroundRepeat: "no-repeat", backgroundPosition: "20px 18px", padding: "12px 45px 12px 60px" }} />
+                                <ErrorMessage
+                                    component="span"
+                                    name='cadastroCpf'
+                                    className='formError' />
+                            </div>
+                            <div className="inputBox">
+                                <Field type="password" placeholder='Digite sua senha' name='loginSenha' id="loginSenha" required style={{ backgroundImage: `url(${senhaIcon})`, backgroundRepeat: "no-repeat", backgroundPosition: "20px 18px", padding: "12px 45px 12px 60px" }} />
+                                <ErrorMessage
+                                    component="span"
+                                    name='cadastroCpf'
+                                    className='formError' />
+                            </div>
+                            <div class="inputBox buttonEnviar">
+                                <button type="submit">Login</button>
+                            </div>
+                        </Form>
+                    </Formik>
                 </div>
             </div>
-            <div className='cadastro'>
-                <div style={{ width: 500, height: 129, left: 0, top: 0, color: '#090C20', fontSize: 35, fontFamily: 'Mochiy Pop One', fontWeight: '400', wordWrap: 'break-word' }}>Criar uma conta é rápido, fácil e gratuito!</div>
-                <div style={{ width: 400, height: 197, left: 0, top: 110, color: '#243387', fontSize: 23, fontFamily: 'Manrope', fontWeight: '400', wordWrap: 'break-word' }}>Com a sua conta da P&R você tem acesso a Ofertas exclusivas, descontos, pode criar e gerenciar a sua Assinatura P&R, acompanhar os seus pedidos e muito mais!</div>
-                <Link to='/cadastro'><div style={{ width: 401, height: 39, left: 0, top: 267, color: '#CB445B', fontSize: 35, fontFamily: 'Mochiy Pop One', fontWeight: '400', wordWrap: 'break-word', textDecoration: 'underline' }}>Cadastre-se</div></Link>
+            <div class='cadastro'>
+                <div className='cadastro--titulo'>Criar uma conta é rápido, fácil e gratuito!</div>
+                <div className='cadastro--content'>Com a sua conta da P&R você tem acesso a Ofertas exclusivas, descontos, pode criar e gerenciar a sua Assinatura P&R, acompanhar os seus pedidos e muito mais!</div>
+                <Link to='/cadastro'><div className='cadastro--link'>Cadastre-se</div></Link>
             </div>
         </div>);
 }

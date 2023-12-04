@@ -1,8 +1,16 @@
 require("dotenv").config(); //Configuração .env
 
-const db = require("./db");
+const mysql = require("mysql"); // Config do banco de dados
 const express = require('express');
 const cors = require('cors');
+const bcrypt = require("bcrypt");
+
+const db = mysql.createPool({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "clientes",
+});
 
 const port = process.env.PORT;
 
@@ -20,20 +28,61 @@ app.get('/', (req, res) => {
     })
 })
 
-app.get('/clientes/:cpf', async (req, res) => {
-    const cliente = await db.listarCliente(req.params.cpf);
-    res.json(cliente);
-})
+app.post("/cadastrar", async (req, res) => {
 
-app.get('/clientes', async (req, res) => {
-    const clientes = await db.listarClientes();
-    res.json(clientes);
-})
+    const cadCpf = req.body.cadastroCpf;
+    const cadUsuario = req.body.cadastroUsuario;
+    const cadSenha = req.body.cadastroSenha;
+    const cadCep = req.body.cadastroCEP;
 
-app.post("/cadastroCliente", async (req, res) => {
-    await db.cadastrarCliente(req.body);
-    res.sendStatus(201) // Cadastro feito com sucesso!
-})
+    db.query("SELECT * FROM clientes WHERE cpf = ?", [cadCpf], (err, result) => {
+        if (err) {
+            res.send(err);
+        }
+        if (result.length == 0) {
+            bcrypt.hash(cadastroSenha, saltRounds, (err, hash) => {
+                db.query(
+                    "INSERT INTO clientes (cpf, nome, senha, cep) VALUE (?,?,?,?)",
+                    [cadCpf, cadUsuario, hash, cadCep],
+                    (error, response) => {
+                        if (err) {
+                            res.send(err);
+                        }
 
+                        res.send({ msg: " Usuario cadastrado com sucesso!" });
+                    })
+            })
+
+        } else {
+            res.send({ msg: "Cpf ja cadastrado!" });
+        }
+    });
+});
+
+app.post("/logar", async (req, res) => {
+     
+    const cpf = req.body.loginCpf;
+    const senha = req.body.loginSenha;
+
+    db.query("SELECT * FROM clientes WHERE cpf = ?", [cpf], (err, result) => {
+        if (err) {
+            res.send(err);
+        }
+        if (result.length > 0) {
+            bcrypt.compare(senha, result[0].senha, (error, response) => {
+                if (error) {
+                    res.send(error);
+                }
+                if (response) {
+                    res.send({ msg: "Usuário logado" });
+                } else {
+                    res.send({ msg: "Senha incorreta" });
+                }
+            });
+        } else {
+            res.send({ msg: "Usuário não registrado!" });
+        }
+    });
+})
 
 
