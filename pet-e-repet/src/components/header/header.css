@@ -159,9 +159,10 @@ body {
         transition: 0.5s;
     }
 }
-@media screen and (max-width:1440px) {
+
+@media screen and (max-width:1130px) {
     .barra-de-pesquisa {
-        width: 49.0625rem;
+        width: 29.0625rem;
         transition: 0.5s;
     }
 }
