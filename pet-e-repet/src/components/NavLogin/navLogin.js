@@ -13,7 +13,7 @@ export default function navLogin() {
                 <h3>Voltar</h3>
             </div>
         </Link>
-        <div className="logo">
+        <div className="logoHeader">
             <img src={logo} alt="logo-img" />
         </div>
     </header>);

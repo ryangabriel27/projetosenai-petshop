@@ -7,8 +7,6 @@ import senhaIcon from '../icons/senhaIcon.svg';
 import cepIcon from '../icons/cepIcon.svg';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import * as yup from 'yup';
 
 export default function Cadastro() {
 

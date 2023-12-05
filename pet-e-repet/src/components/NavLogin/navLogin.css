@@ -19,8 +19,28 @@ header {
     width: 30%;
 }
 
-.logo {
-    width: 78%;
+.logoHeader {
+    width: 70%; /* Reduzindo a largura para garantir espaço suficiente */
     text-align: center;
-    margin: 0px auto;
+    margin: 0 auto;
 }
+
+.logoHeader img {
+    max-width: 20%; /* Garante que a imagem não ultrapasse a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+@media screen and (max-width: 450px) {
+    .logoHeader img {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logoHeader img {
+        max-width: 30%; /* Garante que a imagem não ultrapasse a largura da div */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+

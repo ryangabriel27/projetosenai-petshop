@@ -96,3 +96,76 @@
     font-family: 'Fredoka';
     font-weight: 600;
 }
+
+@media screen and (max-width:1280px) {
+    .cadastro-foto {
+        width: 60%;
+        height: auto;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cadastro-main {
+        margin-top: 1em;
+        flex-direction: column-reverse;
+        /* Muda a direção da flexbox para coluna em telas menores */
+        align-items: center;
+        height: auto;
+        /* Ajusta a altura automaticamente com base no conteúdo */
+    }
+
+    .cadastro-foto {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        height: auto;
+        /* Ajusta a altura automaticamente com base no conteúdo */
+    }
+
+    .cadastro-form {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin-bottom: 1em;
+        /* Adiciona margem superior para separar do elemento anterior */
+        padding: 1em;
+        /* Reduz o padding */
+    }
+
+    .inputs input {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+    }
+
+    .inputs button {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin-left: 0;
+        /* Remove a margem à esquerda */
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .cadastro-foto {
+        width: 50%;
+        /* Ocupa toda a largura disponível */
+        height: auto;
+        /* Ajusta a altura automaticamente com base no conteúdo */
+    }
+
+    .cadastro-foto img{
+        max-width: 100%;
+    }
+
+    .inputs input {
+        width: 70%;
+        /* Ocupa toda a largura disponível */
+    }
+
+    .inputs button {
+        width: 70%;
+        /* Ocupa toda a largura disponível */
+        margin-left: 0;
+        /* Remove a margem à esquerda */
+    }
+}

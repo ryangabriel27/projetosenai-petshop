@@ -11,6 +11,7 @@ body {
     align-content: center;
     flex-direction: row;
     width: 100%;
+    margin-bottom: 3em;
 }
 
 .login {
@@ -87,51 +88,114 @@ body {
 .cadastro {
     width: 50%;
     display: flex;
-    align-items:baseline;
+    align-items: baseline;
     flex-direction: column;
     height: 28.1em;
 }
 
-.cadastro--titulo{
+.cadastro--titulo {
     font-size: 2.6em;
     font-weight: 900;
     word-wrap: break-word;
     font-family: 'Fredoka';
 }
 
-.cadastro--content{
-    font-size: 1.1em;
+.cadastro--content {
+    font-size: 1.3em;
     font-weight: 400;
     word-wrap: break-word;
     margin-top: 1em;
+    color: #243387;
 }
 
-.cadastro--link{
-    font-size: 2.5em;
+.cadastro--link {
+    font-size: 2.3em;
     word-wrap: break-word;
     font-weight: 800;
     font-family: 'Fredoka';
+    color: #CB445B;
+    text-decoration: underline #CB445B;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .main {
         flex-direction: column;
         /* Muda a direção da flexbox para coluna em telas menores */
         align-items: center;
+        margin-bottom: 15em;
+        transition: 0.5s;
     }
 
     .login {
         width: 100%;
         /* Ocupa toda a largura disponível */
-        margin: 0 0 1em 0;
+        margin: 0 0 2em 0;
         /* Adiciona margem apenas na parte inferior para separar do próximo elemento */
+        transition: 0.5s;
     }
 
     .cadastro {
-        width: 100%;
+        width: 80%;
         /* Ocupa toda a largura disponível */
-        margin: 1em 0 0 0;
+        margin: 2em 0 0 0;
         /* Adiciona margem apenas na parte superior para separar do elemento anterior */
+        transition: 0.5s;
+    }
+
+    /* Adicione mais regras de estilo específicas para telas menores aqui */
+}
+
+@media screen and (max-width: 620px) {
+    .main {
+        flex-direction: column;
+        /* Muda a direção da flexbox para coluna em telas menores */
+        align-items: center;
+        margin-bottom: 16em;
+        transition: 0.5s;
+    }
+
+    .login {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin: 0 0 2em 0;
+        /* Adiciona margem apenas na parte inferior para separar do próximo elemento */
+        transition: 0.5s;
+    }
+
+    .cadastro {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin: 2em 0 0 0;
+        /* Adiciona margem apenas na parte superior para separar do elemento anterior */
+        transition: 0.5s;
+    }
+
+    /* Adicione mais regras de estilo específicas para telas menores aqui */
+}
+
+@media screen and (max-width: 490px) {
+    .main {
+        flex-direction: column;
+        /* Muda a direção da flexbox para coluna em telas menores */
+        align-items: center;
+        margin-bottom: 20em;
+        transition: 0.5s;
+    }
+
+    .login {
+        width: 60%;
+        /* Ocupa toda a largura disponível */
+        margin: 0 0 2em 0;
+        /* Adiciona margem apenas na parte inferior para separar do próximo elemento */
+        transition: 0.5s;
+    }
+
+    .cadastro {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin: 2em 0 0 0;
+        /* Adiciona margem apenas na parte superior para separar do elemento anterior */
+        transition: 0.5s;
     }
 
     /* Adicione mais regras de estilo específicas para telas menores aqui */
