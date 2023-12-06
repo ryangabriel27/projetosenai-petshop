@@ -48,22 +48,22 @@ export default function Header() {
             </nav>
             <div class="categorias">
                 <div class="links">
-                    <a href="" class="animais-link">
+                    <a class="animais-link">
                         <p>Cachorros</p>
                     </a>
-                    <a href="" class="animais-link">
+                    <a class="animais-link">
                         <p>Gatos</p>
                     </a>
-                    <a href="" class="animais-link">
+                    <a class="animais-link">
                         <p>Pássaros</p>
                     </a>
-                    <a href="" class="animais-link">
+                    <a class="animais-link">
                         <p>Peixes</p>
                     </a>
-                    <a href="" class="animais-link">
+                    <a class="animais-link">
                         <p>Outros</p>
                     </a>
-                    <a href="" class="animais-link">
+                    <a class="animais-link">
                         <p>Casa&Lazer</p>
                     </a>
                 </div>

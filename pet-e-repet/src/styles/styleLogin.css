@@ -117,6 +117,19 @@ body {
     text-decoration: underline #CB445B;
 }
 
+.form--Error {
+    display: block;
+    color: red;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.form--Error span {
+    font-family: 'Product Sans';
+}
+
 @media screen and (max-width: 900px) {
     .main {
         flex-direction: column;
@@ -186,6 +199,45 @@ body {
         width: 60%;
         /* Ocupa toda a largura disponível */
         margin: 0 0 2em 0;
+        /* Adiciona margem apenas na parte inferior para separar do próximo elemento */
+        transition: 0.5s;
+    }
+
+    .cadastro {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin: 2em 0 0 0;
+        /* Adiciona margem apenas na parte superior para separar do elemento anterior */
+        transition: 0.5s;
+    }
+
+    /* Adicione mais regras de estilo específicas para telas menores aqui */
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        flex-direction: column;
+        /* Muda a direção da flexbox para coluna em telas menores */
+        align-items: center;
+        margin-bottom: 25em;
+        transition: 0.5s;
+    }
+
+    .inputBox input {
+        width: 200px;
+        height: 1.75em;
+        transition: 0.5s;
+    }
+
+    .inputBox button {
+        width: 200px;
+        transition: 0.5s;
+    }
+
+    .login {
+        width: 50%;
+        /* Ocupa toda a largura disponível */
+        margin: 2em;
         /* Adiciona margem apenas na parte inferior para separar do próximo elemento */
         transition: 0.5s;
     }

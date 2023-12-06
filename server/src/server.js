@@ -3,7 +3,9 @@ require("dotenv").config(); //Configuração .env
 const mysql = require("mysql"); // Config do banco de dados
 const express = require('express');
 const cors = require('cors');
+const session = require('express-session');
 const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 const db = mysql.createPool({
     host: "localhost",
@@ -18,6 +20,9 @@ const app = express(); // Criando uma aplicação do express
 
 app.use(express.json());
 app.use(cors());
+app.use(session({
+    secret: 'segredo'
+}))
 app.listen(port);
 
 console.log("BackEND rodando");
@@ -40,7 +45,7 @@ app.post("/cadastrar", async (req, res) => {
             res.send(err);
         }
         if (result.length == 0) {
-            bcrypt.hash(cadastroSenha, saltRounds, (err, hash) => {
+            bcrypt.hash(cadSenha, saltRounds, (err, hash) => {
                 db.query(
                     "INSERT INTO clientes (cpf, nome, senha, cep) VALUE (?,?,?,?)",
                     [cadCpf, cadUsuario, hash, cadCep],

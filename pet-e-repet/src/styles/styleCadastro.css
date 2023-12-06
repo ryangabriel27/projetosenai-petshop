@@ -169,3 +169,29 @@
         /* Remove a margem à esquerda */
     }
 }
+
+@media screen and (max-width: 400px) {
+
+    .cadastro-foto {
+        width: 50%;
+        /* Ocupa toda a largura disponível */
+        height: auto;
+        /* Ajusta a altura automaticamente com base no conteúdo */
+    }
+
+    .cadastro-foto img{
+        max-width: 100%;
+    }
+
+    .inputs input {
+        width: 60%;
+        /* Ocupa toda a largura disponível */
+    }
+
+    .inputs button {
+        width: 60%;
+        /* Ocupa toda a largura disponível */
+        margin-left: 0;
+        /* Remove a margem à esquerda */
+    }
+}

@@ -43,14 +43,15 @@ export default function Login() {
                                 <ErrorMessage
                                     component="span"
                                     name='cadastroCpf'
-                                    className='formError' />
+                                    className='form--Error' />
                             </div>
+
                             <div className="inputBox">
                                 <Field type="password" placeholder='Digite sua senha' name='loginSenha' id="loginSenha" required style={{ backgroundImage: `url(${senhaIcon})`, backgroundRepeat: "no-repeat", backgroundPosition: "20px 18px", padding: "12px 45px 12px 60px" }} />
                                 <ErrorMessage
                                     component="span"
                                     name='cadastroCpf'
-                                    className='formError' />
+                                    className='form--Error' />
                             </div>
                             <div class="inputBox buttonEnviar">
                                 <button type="submit">Login</button>

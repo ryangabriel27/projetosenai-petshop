@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/styleCadastro.css';
 import axios from 'axios';
 import imgCadastro from '../icons/img_cadastro.png';
@@ -10,18 +10,30 @@ import * as yup from 'yup';
 
 export default function Cadastro() {
 
-    const fazerCadastro = (values) => {
-        console.log(values)
-        console.log("Cadastro")
-        axios.post("http://localhost:3000/cadastrar", {
-            cadastroCpf: values.cadastroCpf,
-            cadastroUsuario: values.cadastroUsuario,
-            cadastroSenha: values.cadastroSenha,
-            cadastroCEP: values.cadastroCEP
-        }).then((data) => {
-            console.log(data);
-            
-        });
+    const [cadastroSucesso, setCadastroSucesso] = useState(false);
+
+    const fazerCadastro = async (values, { resetForm }) => {
+        try {
+            const response = await axios.post("http://localhost:3000/cadastrar", {
+                cadastroCpf: values.cadastroCpf,
+                cadastroUsuario: values.cadastroUsuario,
+                cadastroSenha: values.cadastroSenha,
+                cadastroCEP: values.cadastroCEP
+            });
+
+            console.log(response.data);
+
+            // Define o estado de cadastroSucesso como true
+            setCadastroSucesso(true);
+
+            // Limpa os campos do formulário
+            resetForm();
+            setTimeout(() => {
+                setCadastroSucesso(false);
+            }, 3000);
+        } catch (error) {
+            console.error(error);
+        }
     };
 
 
@@ -38,11 +50,21 @@ export default function Cadastro() {
                 <img src={imgCadastro} alt='imgCadastro' />
             </div>
             <div className='cadastro-form'>
+                {cadastroSucesso && (
+                    <div className="feedbackSucesso">
+                        Cadastro realizado com sucesso!
+                    </div>
+                )}
                 <div className='form-title'>
                     <h3>Crie sua conta de membro P&R e tenha dezenas de benefícios exclusivos</h3>
                 </div>
                 <Formik
-                    initialValues={{}}
+                    initialValues={{
+                        cadastroCpf: '',
+                        cadastroUsuario: '',
+                        cadastroSenha: '',
+                        cadastroCEP: '',
+                    }}
                     onSubmit={fazerCadastro}
                     validationSchema={verificaCadastro}>
                     <Form className="form--cadastro">
