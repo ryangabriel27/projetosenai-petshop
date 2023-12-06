@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/styleLogin.css';
+import './login.css';
 import userIcon from '../icons/userIcon.svg';
 import senhaIcon from '../icons/senhaIcon.svg';
 import { Link } from 'react-router-dom';
