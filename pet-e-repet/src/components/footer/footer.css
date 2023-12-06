@@ -59,3 +59,8 @@
 .footerSub2 h5 {
     margin-block-end: 0.5em;
 }
+
+a{
+    text-decoration: none;
+    color: #090C20;
+}
