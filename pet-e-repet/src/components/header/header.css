@@ -139,7 +139,7 @@ body {
 .animais-link:hover{
     background-color: #243387;
     border-radius: 8px;
-    padding: -102px -102px;
+    padding: 4px 8px;
     margin: -20px;
     letter-spacing: 2px;
     transition: 0.5s;
