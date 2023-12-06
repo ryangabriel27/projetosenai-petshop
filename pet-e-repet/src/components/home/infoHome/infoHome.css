@@ -31,6 +31,7 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+    transition: 1s;
 }
 
 #topText{
@@ -43,8 +44,112 @@
     top: 10px;
 }
 
-@media screen and (min-width: 2220px) {
+@media screen and (max-width: 1245px) {
     .infoHome svg {
-        width: 2220px;
+        margin-top: -25px;
+        margin-bottom: -27px;
+    }
+    #info1{
+        width: 90%;
+    }
+    #info2{
+        width: 90%;
+    }
+    #info3{
+        width: 90%;
+    }
+    #info4{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .infoSection {
+        flex-direction: column;
+        transition: 1s;
+    }
+    #info1{
+        margin: 20px 0px;
+        transition: 0.5s;
+    }
+    #info2{
+        margin: 20px 0px;
+        transition: 0.5s;
+    }
+    #info3{
+        margin: 20px 0px;
+        transition: 0.5s;
+    }
+    #info4{
+        margin: 20px 0px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .infoHome svg {
+        margin-top: -25px;
+        margin-bottom: -27px;
+    }
+    #info1{
+        width: 80%;
+    }
+    #info2{
+        width: 80%;
+    }
+    #info3{
+        width: 80%;
+    }
+    #info4{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .infoHome svg {
+        margin-top: -30px;
+        margin-bottom: -32px;
+    }
+    #info1{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    #info2{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    #info3{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    #info4{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    #info1 svg{
+        margin: -15px 0px;
+    }
+    #info2 svg{
+        margin: -15px 0px;
+    }
+    #info3 svg{
+        margin: -15px 0px;
+    }
+    #info4 svg{
+        margin: -15px 0px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .infoHome svg {
+        margin-top: -34px;
+        margin-bottom: -36px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .infoHome svg {
+        margin-top: -40px;
+        margin-bottom: -46px;
     }
 }

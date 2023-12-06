@@ -126,6 +126,13 @@
     }
 }
 
+@media screen and (max-width:800px) {
+    .atendimentosButton {
+        margin-top: -30px;
+        transition: 0.5;
+    }
+}
+
 @media screen and (max-width:780px) {
     .atendimentosButton {
         width: 10.44369rem;
@@ -158,5 +165,11 @@
         width: 8.44369rem;
         font-size: 19px;
         transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .atendimentosButton {
+        display: none;
     }
 }

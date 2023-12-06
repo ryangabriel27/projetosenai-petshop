@@ -11,7 +11,9 @@ export default function Footer() {
                 </svg>
                 <div class="textFooter">
                     <div class="footerTitle">
-                        <h4>Voltar para a página inicial</h4>
+                        <Link to="/">
+                            <h4>Voltar para a página inicial</h4>
+                        </Link>
                     </div>
                     <div class="footerSubTexts">
                         <div class="footerSub1">

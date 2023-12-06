@@ -1,0 +1,254 @@
+body {
+    font-family: 'Product Sans';
+}
+
+.main {
+    margin-top: 2em;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.login .content {
+    width: 600px;
+    height: 500px;
+    background: #F4F2F8;
+    border: 1px solid #D0CED4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login .content p {
+    text-align: center;
+    font-size: 1.3em;
+    color: #243387;
+}
+
+.login .content h2 {
+    font-size: 45px;
+    font-size: 45px;
+    color: #090C20;
+    font-family: 'Fredoka';
+    font-family: 'Fredoka';
+}
+
+
+.login .content .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login .content .form .inputBox {
+    width: 100%;
+}
+
+.inputBox input {
+    width: 300px;
+    height: 2.5em;
+    border: 1px solid #B2AFBA;
+    background: #FFF;
+    border-radius: 2.8em;
+    padding: 7px;
+    font-weight: 500;
+    font-size: 1em;
+    font-family: 'Product Sans';
+    font-family: 'Product Sans';
+}
+
+.inputBox button {
+    background: #243387;
+    width: 300px;
+    height: 2.5em;
+    border-radius: 2.8em;
+    border: 0;
+    padding: 7px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    margin-left: 2em;
+}
+
+.cadastro {
+    width: 50%;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    height: 28.1em;
+}
+
+.cadastro--titulo {
+    font-size: 2.6em;
+    font-weight: 900;
+    word-wrap: break-word;
+    font-family: 'Fredoka';
+}
+
+.cadastro--content {
+    font-size: 1.3em;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 1em;
+    color: #243387;
+}
+
+.cadastro--link {
+    font-size: 2.3em;
+    word-wrap: break-word;
+    font-weight: 800;
+    font-family: 'Fredoka';
+    color: #CB445B;
+    text-decoration: underline #CB445B;
+}
+
+.form--Error {
+    display: block;
+    color: red;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.form--Error span {
+    font-family: 'Product Sans';
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        /* Muda a direção da flexbox para coluna em telas menores */
+        align-items: center;
+        margin-bottom: 15em;
+        transition: 0.5s;
+    }
+
+    .login {
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        margin: 0 0 2em 0;
+        /* Adiciona margem apenas na parte inferior para separar do próximo elemento */
+        transition: 0.5s;
+    }
+
+    .cadastro {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin: 2em 0 0 0;
+        /* Adiciona margem apenas na parte superior para separar do elemento anterior */
+        transition: 0.5s;
+    }
+
+    /* Adicione mais regras de estilo específicas para telas menores aqui */
+}
+
+@media screen and (max-width: 620px) {
+    .main {
+        flex-direction: column;
+        /* Muda a direção da flexbox para coluna em telas menores */
+        align-items: center;
+        margin-bottom: 16em;
+        transition: 0.5s;
+    }
+
+    .login {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin: 0 0 2em 0;
+        /* Adiciona margem apenas na parte inferior para separar do próximo elemento */
+        transition: 0.5s;
+    }
+
+    .cadastro {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin: 2em 0 0 0;
+        /* Adiciona margem apenas na parte superior para separar do elemento anterior */
+        transition: 0.5s;
+    }
+
+    /* Adicione mais regras de estilo específicas para telas menores aqui */
+}
+
+@media screen and (max-width: 490px) {
+    .main {
+        flex-direction: column;
+        /* Muda a direção da flexbox para coluna em telas menores */
+        align-items: center;
+        margin-bottom: 20em;
+        transition: 0.5s;
+    }
+
+    .login {
+        width: 60%;
+        /* Ocupa toda a largura disponível */
+        margin: 0 0 2em 0;
+        /* Adiciona margem apenas na parte inferior para separar do próximo elemento */
+        transition: 0.5s;
+    }
+
+    .cadastro {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin: 2em 0 0 0;
+        /* Adiciona margem apenas na parte superior para separar do elemento anterior */
+        transition: 0.5s;
+    }
+
+    /* Adicione mais regras de estilo específicas para telas menores aqui */
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        flex-direction: column;
+        /* Muda a direção da flexbox para coluna em telas menores */
+        align-items: center;
+        margin-bottom: 25em;
+        transition: 0.5s;
+    }
+
+    .inputBox input {
+        width: 200px;
+        height: 1.75em;
+        transition: 0.5s;
+    }
+
+    .inputBox button {
+        width: 200px;
+        transition: 0.5s;
+    }
+
+    .login {
+        width: 50%;
+        /* Ocupa toda a largura disponível */
+        margin: 2em;
+        /* Adiciona margem apenas na parte inferior para separar do próximo elemento */
+        transition: 0.5s;
+    }
+
+    .cadastro {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin: 2em 0 0 0;
+        /* Adiciona margem apenas na parte superior para separar do elemento anterior */
+        transition: 0.5s;
+    }
+
+    /* Adicione mais regras de estilo específicas para telas menores aqui */
+}

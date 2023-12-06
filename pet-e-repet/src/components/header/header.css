@@ -16,6 +16,31 @@ body {
 
 .icons {
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.carrinho-icon{
+    transition: 0.5s;
+}
+.carrinho-icon:hover{
+    scale: 1.5;
+    transition: 0.5s;
+}
+
+.coracao-icon{
+    transition: 0.5s;
+}
+.coracao-icon:hover{
+    scale: 1.5;
+    transition: 0.5s;
+}
+
+.user-icon{
+    transition: 0.5s;
+}
+.user-icon:hover{
+    scale: 1.5;
+    transition: 0.5s;
 }
 
 .cabecalho {
@@ -40,6 +65,12 @@ body {
     width: 10.1875rem;
     height: 2.5rem;
     flex-shrink: 0;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    scale: 1.5;
+    transition: 0.5s;
 }
 
 .logo img {
@@ -139,7 +170,7 @@ body {
 .animais-link:hover{
     background-color: #243387;
     border-radius: 8px;
-    padding: -102px -102px;
+    padding: 0px 20px;
     margin: -20px;
     letter-spacing: 2px;
     transition: 0.5s;

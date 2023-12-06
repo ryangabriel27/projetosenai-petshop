@@ -1,0 +1,197 @@
+.cadastro-main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cadastro-foto {
+    width: 40%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-form {
+    display: flex;
+    width: 700px;
+    height: 550px;
+    height: 550px;
+    padding: 1em 3em 3em 3em;
+    background-color: #EFEFEF;
+    border: 1.5px #B2AFBA solid;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-title {
+    text-align: center;
+    font-family: 'Fredoka';
+    font-family: 'Fredoka';
+    font-size: 18px;
+}
+
+.form--cadastro {
+    text-align: center;
+}
+
+.formError {
+    display: block;
+    color: red;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.formError span {
+    font-family: 'Product Sans';
+}
+
+.inputBox {
+    font-family: 'Product Sans';
+}
+
+.inputs input {
+    width: 500px;
+    height: 2.5em;
+    border: 1px solid #B2AFBA;
+    background: #FFF;
+    border-radius: 2.8em;
+    padding: 7px;
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 1em;
+    font-family: 'Product Sans';
+    transition: all 0.2s ease-in-out;
+}
+
+.inputs button {
+    background: #243387;
+    position: relative;
+    width: 80%;
+    height: 2.5em;
+    border-radius: 2.8em;
+    border: 0;
+    padding: 7px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    margin-left: 2em;
+}
+
+.form-text {
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    color: #CB445B;
+    font-family: 'Product Sans';
+}
+
+.buttonEnviar button {
+    font-family: 'Fredoka';
+    font-weight: 600;
+}
+
+@media screen and (max-width:1280px) {
+    .cadastro-foto {
+        width: 60%;
+        height: auto;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cadastro-main {
+        margin-top: 1em;
+        flex-direction: column-reverse;
+        /* Muda a direção da flexbox para coluna em telas menores */
+        align-items: center;
+        height: auto;
+        /* Ajusta a altura automaticamente com base no conteúdo */
+    }
+
+    .cadastro-foto {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        height: auto;
+        /* Ajusta a altura automaticamente com base no conteúdo */
+    }
+
+    .cadastro-form {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin-bottom: 1em;
+        /* Adiciona margem superior para separar do elemento anterior */
+        padding: 1em;
+        /* Reduz o padding */
+    }
+
+    .inputs input {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+    }
+
+    .inputs button {
+        width: 80%;
+        /* Ocupa toda a largura disponível */
+        margin-left: 0;
+        /* Remove a margem à esquerda */
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .cadastro-foto {
+        width: 50%;
+        /* Ocupa toda a largura disponível */
+        height: auto;
+        /* Ajusta a altura automaticamente com base no conteúdo */
+    }
+
+    .cadastro-foto img{
+        max-width: 100%;
+    }
+
+    .inputs input {
+        width: 70%;
+        /* Ocupa toda a largura disponível */
+    }
+
+    .inputs button {
+        width: 70%;
+        /* Ocupa toda a largura disponível */
+        margin-left: 0;
+        /* Remove a margem à esquerda */
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .cadastro-foto {
+        width: 50%;
+        /* Ocupa toda a largura disponível */
+        height: auto;
+        /* Ajusta a altura automaticamente com base no conteúdo */
+    }
+
+    .cadastro-foto img{
+        max-width: 100%;
+    }
+
+    .inputs input {
+        width: 60%;
+        /* Ocupa toda a largura disponível */
+    }
+
+    .inputs button {
+        width: 60%;
+        /* Ocupa toda a largura disponível */
+        margin-left: 0;
+        /* Remove a margem à esquerda */
+    }
+}
