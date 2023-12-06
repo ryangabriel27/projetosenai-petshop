@@ -18,6 +18,11 @@
     font-weight: 500;
     font-size: 2rem;
     color: #090C20;
+    transition: 0.5s;
+}
+.footerTitle:hover{
+    font-size: 2.5rem;
+    transition: 0.5s;
 }
 
 .footerSubTexts {
