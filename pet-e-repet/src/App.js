@@ -28,8 +28,8 @@ function App() {
       <Route path='/' element={<HomePage />} />
       <Route path='/login' element={<Login />} />
       <Route path='/cadastro' element={<Cadastro />} />
-      <Route path='/cachorros' element={<Produtos categoria="Cachorro"/>} />
-      <Route path='/gatos' element={<Produtos categoria="Gato"/>} />
+      <Route path='/cachorros' element={<Produtos categoria="Cachorros"/>} />
+      <Route path='/gatos' element={<Produtos categoria="Gatos"/>} />
       <Route path='/aves' element={<Produtos categoria="Aves"/>} />
       <Route path='/casaelazer' element={<Produtos categoria="Casa & Lazer"/>} />
       <Route path='/outros' element={<Produtos categoria="Outros"/>} />
