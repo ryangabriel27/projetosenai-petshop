@@ -1,0 +1,73 @@
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.titleProdutos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Fredoka';
+    font-size: 55px;
+    color: #090C20;
+    font-weight: 900;
+    height: 200px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 218px;
+    border-radius: 10px;
+    border: 1px solid #D0CED4;
+    background: #F4F2F8;
+    font-family: 'Product Sans';
+    padding: 12px;
+    margin: 8px;
+}
+
+.card h2 {
+    margin-bottom: -10px;
+    color: #090C20;
+    word-wrap: break-word;
+}
+
+.card p {
+    color: #787284;
+}
+
+.card button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 8px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Product Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border-radius: 20px;
+    background: #CB445B;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+}
+
+.cardsProdutos{
+    display: flex;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
