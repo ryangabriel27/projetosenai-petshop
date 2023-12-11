@@ -272,6 +272,15 @@ function ArrayProdutos({ categoria }: { categoria: string }) {
             descricao: 'Para Coelhos Ornamentais com 1,2kg'
         },
 
+        //casa e lazer
+        {
+            foto: 'https://polipet.fbitsstatic.net/img/p/adaptil-difusor-com-refil-ceva-48ml-para-cachorros-96467/290470-4.jpg?w=420&h=420&v=no-change&qs=ignore',
+            nome: 'Adaptil Difusor com Refil',
+            categoria: 'Casa & Lazer',
+            preco: 'R$216,45',
+            descricao: 'Ceva 48ml para Cachorros'
+        },
+
     ]
 
     type Props = {
