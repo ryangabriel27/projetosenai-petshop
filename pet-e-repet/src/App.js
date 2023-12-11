@@ -7,12 +7,14 @@ import Footer from './components/footer/footer.js';
 import { Routes, Route } from 'react-router-dom';
 import NavLogin from './components/navLogin/navLogin.js';
 import Cadastro from './components/cadastro/cadastro.js';
+import Produtos from './components/produtos/produtos.js'
 
 function App() {
   return <>
     {/* -- Routing das headers -- */}
     <Routes>
       <Route path='/' element={<Header />} />
+      <Route path='/produtos' element={<Header />} />
       <Route path='/login' element={<NavLogin />} />
       <Route path='/cadastro' element={<NavLogin />} />
     </Routes>
@@ -21,6 +23,7 @@ function App() {
       <Route path='/' element={<HomePage />} />
       <Route path='/login' element={<Login />} />
       <Route path='/cadastro' element={<Cadastro />} />
+      <Route path='/produtos' element={<Produtos />} />
     </Routes>
     {/* -- Footer -- */}
     <Footer />

@@ -164,6 +164,7 @@ body {
     font-weight: 500;
     font-size: 1.1rem;
     text-decoration: none;
+    cursor: pointer;
     transition: 0.5s;
 }
 
