@@ -1,9 +1,17 @@
 import React from "react";
+import { useEffect } from 'react';
 import './produtos.css'
 import ArrayProdutos from "../arrayProdutos/arrayProdutos.tsx";
 
-function Produtos({categoria}) {
+function Produtos({ categoria }) {
     return (
+        <>
+        <html>
+        <head>
+            <title>{categoria}</title>
+        </head>
+        </html>
+
         <div class="separator">
             <div class="titleProdutos">
                 <h1>{categoria}</h1>
@@ -12,6 +20,7 @@ function Produtos({categoria}) {
                 <ArrayProdutos categoria={categoria} />
             </div>
         </div>
+        </>
     )
 }
 

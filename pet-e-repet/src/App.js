@@ -9,6 +9,7 @@ import NavLogin from './components/NavLogin/navLogin.js';
 import Cadastro from './components/cadastro/cadastro.js';
 import Produtos from './components/produtos/produtos.js';
 
+
 function App() {
   return <>
     {/* -- Routing das headers -- */}

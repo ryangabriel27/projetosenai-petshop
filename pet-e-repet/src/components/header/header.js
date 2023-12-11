@@ -55,7 +55,7 @@ export default function Header() {
                         <p>Gatos</p>
                     </Link>
                     <Link to="/aves" class="animais-link">
-                        <p>Pássaros</p>
+                        <p>Aves</p>
                     </Link>
                     <Link to="/peixes" class="animais-link">
                         <p>Peixes</p>

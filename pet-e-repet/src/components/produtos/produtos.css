@@ -20,13 +20,26 @@
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 218px;
+    height: 450px;
     border-radius: 10px;
     border: 1px solid #D0CED4;
     background: #F4F2F8;
     font-family: 'Product Sans';
     padding: 12px;
-    margin: 8px;
+    margin: 16px;
+}
+
+.card h1 {
+    color: #243387;
+    word-wrap: break-word;
+    font-weight: 900;
+    font-size: 39px;
+    margin: -5px 0px -10px 0px;
+    font-family: 'Product Sans';
 }
 
 .card h2 {
@@ -57,6 +70,8 @@
     background: #CB445B;
     border: 0px solid;
     cursor: pointer;
+    position: relative;
+    top: 10px;
 }
 
 .card img {
