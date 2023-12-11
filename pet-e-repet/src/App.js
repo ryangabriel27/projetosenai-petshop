@@ -5,7 +5,7 @@ import HomePage from './components/home/homePage.js';
 import Login from './components/login/login.js';
 import Footer from './components/footer/footer.js';
 import { Routes, Route } from 'react-router-dom';
-import NavLogin from './components/NavLogin/navLogin.js';
+import NavLogin from './components/navLogin/navLogin.js';
 import Cadastro from './components/cadastro/cadastro.js';
 import Produtos from './components/produtos/produtos.js'
 
