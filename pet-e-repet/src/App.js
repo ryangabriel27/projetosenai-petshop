@@ -5,14 +5,9 @@ import HomePage from './components/home/homePage.js';
 import Login from './components/login/login.js';
 import Footer from './components/footer/footer.js';
 import { Routes, Route } from 'react-router-dom';
-import NavLogin from './components/navLogin/navLogin.js';
+import NavLogin from './components/NavLogin/navLogin.js';
 import Cadastro from './components/cadastro/cadastro.js';
-import ProdutosCachorro from './components/produtos/produtosCachorro.js';
-import ProdutosGato from './components/produtos/produtosGato.js';
-import ProdutosAves from './components/produtos/produtoAve.js';
-import ProdutosCasaLazer from './components/produtos/produtosCasaLazer.js';
-import ProdutosOutros from './components/produtos/produtosOutros.js';
-import ProdutosPeixes from './components/produtos/produtosPeixe.js';
+import Produtos from './components/produtos/produtos.js';
 
 function App() {
   return <>
@@ -33,12 +28,12 @@ function App() {
       <Route path='/' element={<HomePage />} />
       <Route path='/login' element={<Login />} />
       <Route path='/cadastro' element={<Cadastro />} />
-      <Route path='/cachorros' element={<ProdutosCachorro />} />
-      <Route path='/gatos' element={<ProdutosGato />} />
-      <Route path='/aves' element={<ProdutosAves />} />
-      <Route path='/casaelazer' element={<ProdutosCasaLazer />} />
-      <Route path='/outros' element={<ProdutosOutros />} />
-      <Route path='/peixes' element={<ProdutosPeixes />} />
+      <Route path='/cachorros' element={<Produtos categoria="Cachorro"/>} />
+      <Route path='/gatos' element={<Produtos categoria="Gato"/>} />
+      <Route path='/aves' element={<Produtos categoria="Aves"/>} />
+      <Route path='/casaelazer' element={<Produtos categoria="Casa & Lazer"/>} />
+      <Route path='/outros' element={<Produtos categoria="Outros"/>} />
+      <Route path='/peixes' element={<Produtos categoria="Peixes"/>} />
     </Routes>
     {/* -- Footer -- */}
     <Footer />

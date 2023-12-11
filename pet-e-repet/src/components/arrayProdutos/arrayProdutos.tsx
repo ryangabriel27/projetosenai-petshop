@@ -44,21 +44,17 @@ function ArrayProdutos({ categoria }: { categoria: string }) {
         descricao: string;
     }
 
-    return (
-        <div>
-            <ul>
-                {data
-                    .filter((item: Props) => categoria ? item.categoria.toLowerCase() === categoria.toLowerCase() : true)
-                    .map((item: Props, index) => (
-                        <div className="card">
-                            <img src={item.foto}></img>
-                            <h2>{item.nome}</h2>
-                            <p>{item.descricao}</p>
-                            <button>Comprar</button>
-                        </div>
-                    ))}
-            </ul>
-        </div>
+    return (<div className="cardsProdutos">
+        {data
+            .filter((item: Props) => categoria ? item.categoria.toLowerCase() === categoria.toLowerCase() : true)
+            .map((item: Props, index) => (
+                <div className="card">
+                    <img src={item.foto}></img>
+                    <h2>{item.nome}</h2>
+                    <p>{item.descricao}</p>
+                    <button>Comprar</button>
+                </div>
+            ))}</div>
     )
 }
 
