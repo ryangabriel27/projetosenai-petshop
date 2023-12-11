@@ -1,7 +1,5 @@
 import React from "react";
-import Header from '../header/header.js';
 import './produtos.css'
-import { Link } from 'react-router-dom';
 import ArrayProdutos from "../arrayProdutos/arrayProdutos.tsx";
 
 export default function ProdutosAves() {
