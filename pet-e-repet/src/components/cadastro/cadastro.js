@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/styleCadastro.css';
+import './cadastro.css';
 import axios from 'axios';
 import imgCadastro from '../icons/img_cadastro.png';
 import userIcon from '../icons/userIcon.svg';
