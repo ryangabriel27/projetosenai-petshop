@@ -48,22 +48,22 @@ export default function Header() {
             </nav>
             <div class="categorias">
                 <div class="links">
-                    <Link to="/produtos" class="animais-link">
+                    <Link to="/cachorros" class="animais-link">
                         <p>Cachorros</p>
                     </Link>
-                    <Link to="/produtos" class="animais-link">
+                    <Link to="/gatos" class="animais-link">
                         <p>Gatos</p>
                     </Link>
-                    <Link to="/produtos" class="animais-link">
+                    <Link to="/aves" class="animais-link">
                         <p>Pássaros</p>
                     </Link>
-                    <Link to="/produtos" class="animais-link">
+                    <Link to="/peixes" class="animais-link">
                         <p>Peixes</p>
                     </Link>
-                    <Link to="/produtos" class="animais-link">
+                    <Link to="/outros" class="animais-link">
                         <p>Outros</p>
                     </Link>
-                    <Link to="/produtos" class="animais-link">
+                    <Link to="/casaelazer" class="animais-link">
                         <p>Casa&Lazer</p>
                     </Link>
                 </div>

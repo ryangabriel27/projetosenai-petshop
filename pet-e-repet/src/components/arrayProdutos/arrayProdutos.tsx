@@ -50,12 +50,12 @@ function ArrayProdutos({ categoria }: { categoria: string }) {
                 {data
                     .filter((item: Props) => categoria ? item.categoria.toLowerCase() === categoria.toLowerCase() : true)
                     .map((item: Props, index) => (
-                        <li key={index}>
-                            <img src={item.foto} alt="foto" /><br />
-                            <h1>{item.nome}</h1>
-                            <h2>{item.preco}</h2>
+                        <div className="card">
+                            <img src={item.foto}></img>
+                            <h2>{item.nome}</h2>
                             <p>{item.descricao}</p>
-                        </li>
+                            <button>Comprar</button>
+                        </div>
                     ))}
             </ul>
         </div>
