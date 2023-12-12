@@ -24,7 +24,7 @@
     flex-direction: column;
     justify-content: space-around;
     width: 218px;
-    height: 450px;
+    height: 480px;
     border-radius: 10px;
     border: 1px solid #D0CED4;
     background: #F4F2F8;
@@ -72,6 +72,12 @@
     cursor: pointer;
     position: relative;
     top: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.card button:hover{
+    background: #a8394c;
+    transition: ease-in-out 0.2s;
 }
 
 .card img {
