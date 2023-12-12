@@ -297,7 +297,7 @@ function ArrayProdutos({ categoria }: { categoria: string }) {
                     .filter((item: Props) => categoria ? item.categoria.toLowerCase() === categoria.toLowerCase() : true)
                     .map((item: Props, index) => (
                         <div className="card">
-                            <img src={item.foto}></img>
+                            <img src={item.foto} alt={item.nome} title={item.nome}></img>
                             <h2>{item.nome}</h2>
                             <p>{item.descricao}</p>
                             <h1>{item.preco}</h1>
