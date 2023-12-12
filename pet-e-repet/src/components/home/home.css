@@ -140,22 +140,22 @@
     }
 
     #banhoETosa:hover{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     }
     
     #adestramentos:hover{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     }
     
     #adote:hover{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     }
 
     #blog:hover{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     }
 }
@@ -165,6 +165,25 @@
         width: 8.44369rem;
         font-size: 19px;
         transition: 0.5s;
+    }
+    #banhoETosa:hover{
+        font-size: 1.2rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+    
+    #adestramentos:hover{
+        font-size: 1.2rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+    
+    #adote:hover{
+        font-size: 1.2rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+
+    #blog:hover{
+        font-size: 1.2rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     }
 }
 

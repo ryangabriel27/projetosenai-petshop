@@ -46,10 +46,12 @@
     font-weight: 600;
     margin-top: -10px;
     margin-bottom: 10px;
+    transition: 1s;
 }
 
 .formError span {
     font-family: 'Product Sans';
+    transition: 1s;
 }
 
 .inputBox {
@@ -68,6 +70,12 @@
     margin-bottom: 1em;
     font-family: 'Product Sans';
     transition: all 0.2s ease-in-out;
+}
+
+.inputs input:focus{
+    border: 4px solid #24338749;
+    transition: all 0.2s ease-in-out;
+    outline: none;
 }
 
 .inputs button {
@@ -116,8 +124,8 @@
     }
 
     .cadastro-foto {
-        width: 80%;
-        /* Ocupa toda a largura disponível */
+        display: none;
+        /* Tira a foto que ficava ao lado do cadastro para melhor visualização da página */
         height: auto;
         /* Ajusta a altura automaticamente com base no conteúdo */
     }
