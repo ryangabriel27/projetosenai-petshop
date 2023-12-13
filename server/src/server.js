@@ -1,18 +1,25 @@
 require("dotenv").config(); //Configuração .env
 
-const mysql = require("mysql"); // Config do banco de dados
+const mysql2 = require("mysql2"); // Config do banco de dados
 const express = require('express');
 const cors = require('cors');
-const session = require('express-session');
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const saltRounds = 10;
 
-const db = mysql.createPool({
+const db = mysql2.createConnection({
     host: "localhost",
     user: "root",
-    password: "",
-    database: "clientes",
+    password: "root",
+    database: "clientes"
 });
+
+db.connect((err) => {
+    if (err) {
+        console.log(err)
+    } else {
+        console.log('Conectado ao mySql..')
+    }
+})
 
 const port = process.env.PORT;
 
@@ -20,9 +27,6 @@ const app = express(); // Criando uma aplicação do express
 
 app.use(express.json());
 app.use(cors());
-app.use(session({
-    secret: 'segredo'
-}))
 app.listen(port);
 
 console.log("BackEND rodando");
@@ -44,50 +48,41 @@ app.post("/cadastrar", async (req, res) => {
         if (err) {
             res.send(err);
         }
+
+        console.log(result)
+
         if (result.length == 0) {
-            bcrypt.hash(cadSenha, saltRounds, (err, hash) => {
-                db.query(
-                    "INSERT INTO clientes (cpf, nome, senha, cep) VALUE (?,?,?,?)",
-                    [cadCpf, cadUsuario, hash, cadCep],
-                    (error, response) => {
-                        if (err) {
-                            res.send(err);
-                        }
-
-                        res.send({ msg: " Usuario cadastrado com sucesso!" });
-                    })
-            })
-
+            db.query(
+                "INSERT INTO clientes(cpf, nome, senha, cep) VALUE (?,?,?,?)",
+                [cadCpf, cadUsuario, cadSenha, cadCep],
+                (error, response) => {
+                    if (err) {
+                        res.send(err);
+                    }
+                    res.send({ msg: " Usuario cadastrado com sucesso!" });
+                })
         } else {
             res.send({ msg: "Cpf ja cadastrado!" });
         }
-    });
+    })
 });
 
 app.post("/logar", async (req, res) => {
-     
-    const cpf = req.body.loginCpf;
-    const senha = req.body.loginSenha;
 
-    db.query("SELECT * FROM clientes WHERE cpf = ?", [cpf], (err, result) => {
+    const logCpf = req.body.loginCpf;
+    const logSenha = req.body.loginSenha;
+
+    db.query("SELECT * FROM clientes WHERE cpf = ? and senha = ?", [logCpf, logSenha], (err, result) => {
         if (err) {
             res.send(err);
         }
+        console.log(result);
         if (result.length > 0) {
-            bcrypt.compare(senha, result[0].senha, (error, response) => {
-                if (error) {
-                    res.send(error);
-                }
-                if (response) {
-                    res.send({ msg: "Usuário logado" });
-                } else {
-                    res.send({ msg: "Senha incorreta" });
-                }
-            });
+            res.send({ msg: "Usuário logado" })
         } else {
             res.send({ msg: "Usuário não registrado!" });
         }
     });
-})
+});
 
 

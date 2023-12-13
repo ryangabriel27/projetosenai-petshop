@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './login.css';
 import userIcon from '../icons/userIcon.svg';
 import senhaIcon from '../icons/senhaIcon.svg';
@@ -9,16 +9,25 @@ import * as yup from 'yup';
 
 export default function Login() {
 
+    const [loginMsg, setLoginMsg] = useState(null);
+
+
     const fazerLogin = (values) => {  // Função responsável por pegar os valores dessa página e enviar por meio do Axios para o banco de dados
         console.log(values)
         console.log("Login")
-        axios.post("http://localhost:3000/cadastrar", {
-            cadastroCpf: values.cadastroCpf,
-            cadastroUsuario: values.cadastroUsuario
-        }).then((data) => {
-            console.log(data);
+        axios.post("http://localhost:3000/logar", {
+            loginCpf: values.loginCpf,
+            loginSenha: values.loginSenha
+        }).then((response) => {
+            console.log(response.data);
 
-        });
+            // Atualizar a mensagem com base na resposta do servidor
+            setLoginMsg(response.data.msg);
+        })
+            .catch((error) => {
+                console.error("Erro ao fazer login:", error);
+                setLoginMsg("Erro ao fazer login. Tente novamente.");
+            });
     };
 
 
@@ -60,6 +69,7 @@ export default function Login() {
                     </Formik>
                 </div>
             </div>
+            {loginMsg && <div className={loginMsg.includes("Erro") ? 'error-message' : 'success-message'}>{loginMsg}</div>}
             <div class='cadastro'>
                 <div className='cadastro--titulo'>Criar uma conta é rápido, fácil e gratuito!</div>
                 <div className='cadastro--content'>Com a sua conta da P&R você tem acesso a Ofertas exclusivas, descontos, pode criar e gerenciar a sua Assinatura P&R, acompanhar os seus pedidos e muito mais!</div>
