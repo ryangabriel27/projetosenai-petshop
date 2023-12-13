@@ -1,3 +1,5 @@
+/* xxxxxxxxxx Array com os produtos salvos xxxxxxxxxx*/
+
 export const PRODUTOS = [
     //cachorros
     {

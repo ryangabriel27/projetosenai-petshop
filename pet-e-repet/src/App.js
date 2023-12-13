@@ -9,6 +9,7 @@ import NavLogin from './components/NavLogin/navLogin.js';
 import Cadastro from './components/cadastro/cadastro.js';
 import Produtos from './components/produtos/produtos.js';
 import { ShopContextProvider } from './context/shop-context.jsx';
+import Carrinho from './components/carrinho/carrinho.jsx';
 
 
 function App() {
@@ -25,12 +26,14 @@ function App() {
         <Route path='/peixes' element={<Header />} />
         <Route path='/login' element={<NavLogin />} />
         <Route path='/cadastro' element={<NavLogin />} />
+        <Route path='/carrinho' element={<NavLogin />} />
       </Routes>
       {/* -- Routing das páginas -- */}
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/login' element={<Login />} />
         <Route path='/cadastro' element={<Cadastro />} />
+        <Route path='/carrinho' element={<Carrinho />} />
         <Route path='/cachorros' element={<Produtos categoria="Cachorros" />} />
         <Route path='/gatos' element={<Produtos categoria="Gatos" />} />
         <Route path='/aves' element={<Produtos categoria="Aves" />} />

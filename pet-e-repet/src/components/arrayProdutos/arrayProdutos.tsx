@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { PRODUTOS } from '../../productsList.tsx';
 import { Props } from "../../productsList.tsx";
-import { ShopContext } from "../../context/shop-context.jsx";
+import { ShopContext } from '../../context/shop-context.jsx'
 
-function ArrayProdutos({ categoria }: { categoria: string }) {
+function ArrayProdutos({ categoria }: { categoria: string }) { /* Categoria é colocada como parâmetro, pois, por exemplo, ao ir até a página para cachorros deve-se exibir apenas os produtos da categoria cachorro*/
 
-    const { addToCart } = useContext(ShopContext);
+    const { addToCart } = useContext(ShopContext);  // Função para adicionar o item ao carrinho
 
     return (
+        /* Percorre todo o array com os produtos e cria um card para cada produto, filtrando-os pela sua devida categoria*/
         <div className="cardsProdutos">
             {PRODUTOS
                 .filter((item: Props) => categoria ? item.categoria.toLowerCase() === categoria.toLowerCase() : true)

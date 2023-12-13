@@ -38,6 +38,13 @@ Após um levantamento das principais ideias, o grupo, foi iniciar o processo de 
     <img src="./imageDocumentacao/loginBaixaXMedia.jpg">
 </h1>
 
+#### Produtos:
+<h1 align="center">
+    <img src="./imageDocumentacao/produtosBaixaXMedia.jpg">
+</h1>
+
+
+
 - **[Figma (baixa fidelidade)](https://www.figma.com/file/AIDQ3qp3zuQzFuQNLp8Rce/Untitled?type=design&node-id=0%3A1&mode=design&t=KijMigivXGFy6b1i-1)**
 
 - **[Figma (media fidelidade)](https://www.figma.com/file/9a101RnrORnxLhzz9UTVYY/prototipo-media-fidelidade?type=design&node-id=0%3A1&mode=design&t=gx5TINVGloHioYf7-1)**
@@ -51,7 +58,33 @@ Por fim, o resultado nos deixou satisfeitos com nosso trabalho, nos certificamos
 
 <h1>
     <img src="./imageDocumentacao/teste2.gif">
+    <img src="./imageDocumentacao/teste3.gif">
 </h1>
+
+## 🦴 Informações do site:
+
+### Para a construção do site utilizamos as seguintes dependências:
+
+- ReactJS
+- NukaCarousel
+- Formik
+- Yup
+- Axios
+- ExpressJS
+- CORS
+- MySQL
+- Bcrypt
+- ContextAPI from react
+
+### Fontes que nos ajudaram muito a construir o site:
+
+- **[Sistema de login e cadastro com Node e MySQL - VitorCunhaCode](https://www.youtube.com/watch?v=F_mXVI8Dalg&t=2772s&ab_channel=VitorCunhaCode)**
+- **[Carrinho com reactJS - PedroTech ](https://www.youtube.com/watch?v=tEMrD9t85v4&t=3694s&ab_channel=PedroTech)**
+
+### Criadores:
+
+
+
 
 
 

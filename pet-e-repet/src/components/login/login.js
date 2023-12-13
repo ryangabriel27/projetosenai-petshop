@@ -9,7 +9,7 @@ import * as yup from 'yup';
 
 export default function Login() {
 
-    const fazerLogin = (values) => {
+    const fazerLogin = (values) => {  // Função responsável por pegar os valores dessa página e enviar por meio do Axios para o banco de dados
         console.log(values)
         console.log("Login")
         axios.post("http://localhost:3000/cadastrar", {
