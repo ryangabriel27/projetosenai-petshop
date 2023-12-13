@@ -53,11 +53,11 @@ export default function Carrinho() {
                 <div className="form-group">
                     <h3>Resumo do pedido:</h3>
                     <div className="row-valorTotal">
-                        <p>Valor Total</p>
+                        <p id="strong">Valor Total</p>
                         <p>R$ {totalAmount}</p>
                     </div>
                     <div className="row-prazoDeEntrega">
-                        <p>Prazo de entrega</p>
+                        <p id="strong">Prazo de entrega</p>
                         <p>de 3 a 6 dias úteis</p>
                     </div>
                 </div>
