@@ -73,7 +73,6 @@ Por fim, o resultado nos deixou satisfeitos com nosso trabalho, nos certificamos
 - ExpressJS
 - CORS
 - MySQL
-- Bcrypt
 - ContextAPI from react
 
 ### Fontes que nos ajudaram muito a construir o site:
@@ -82,6 +81,12 @@ Por fim, o resultado nos deixou satisfeitos com nosso trabalho, nos certificamos
 - **[Carrinho com reactJS - PedroTech ](https://www.youtube.com/watch?v=tEMrD9t85v4&t=3694s&ab_channel=PedroTech)**
 
 ### Criadores:
+
+ **[Ryan Gabriel De Julio](https://github.com/ryangabriel27)**
+
+ **[Victor Hugo Barbosa](https://github.com/vigiaquinze)**
+
+ **[Nicolas Afonso]()**
 
 
 
