@@ -16,7 +16,8 @@ A Pet&Repet é uma loja que trabalha com e-Commerce e, também, com consultas ve
 ## Construção do site:
 
 ### Briefing:
-Em primeiro momento os membros do grupo fizeram um **briefing**, que é um levantamento de ideias, afim de criar a estética primária do site, seu público-alvo, seus objetivos, etc...
+Em primeiro momento os membros do grupo fizeram um **briefing**, que é um levantamento de ideias, afim de criar a estética primária do site, seu público-alvo, seus objetivos, etc... Dessa forma, definimos que o site é para um publico jovem-adulto entre 18 a 30 anos, estlizidado com cores vivas, sendo bem atrativo, chamativo e caracteristico. O objetivo da Pet&Repet é tornar mais próxima a ideia do comprador e vendedor, tendo em vista que o beneficio é um, o bem-estar do pet, independente do animal que seja.
+
 
 ### Prototipagem:
 Após um levantamento das principais ideias, o grupo, foi iniciar o processo de criação do site utilizando o Figma como ferramenta de prototipagem. Dessa maneira foram feitas as prototipagem de baixa e média fidelidade.
@@ -65,15 +66,19 @@ Por fim, o resultado nos deixou satisfeitos com nosso trabalho, nos certificamos
 
 ### Para a construção do site utilizamos as seguintes dependências:
 
+#### Front-END:
 - ReactJS
 - NukaCarousel
 - Formik
 - Yup
 - Axios
+- ContextAPI from react
+
+#### Back-END:
 - ExpressJS
 - CORS
 - MySQL
-- ContextAPI from react
+
 
 ### Fontes que nos ajudaram muito a construir o site:
 
@@ -82,11 +87,11 @@ Por fim, o resultado nos deixou satisfeitos com nosso trabalho, nos certificamos
 
 ### Criadores:
 
- **[Ryan Gabriel De Julio](https://github.com/ryangabriel27)**
+ - **[Ryan Gabriel De Julio](https://github.com/ryangabriel27)**
 
- **[Victor Hugo Barbosa](https://github.com/vigiaquinze)**
+ - **[Victor Hugo Barbosa](https://github.com/vigiaquinze)**
 
- **[Nicolas Afonso]()**
+ - **[Nicolas Afonso]()**
 
 
 
