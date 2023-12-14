@@ -75,7 +75,7 @@
     transition: ease-in-out 0.5s;
 }
 
-.card button:hover{
+.card button:hover {
     background: #a8394c;
     transition: ease-in-out 0.2s;
 }
@@ -84,11 +84,33 @@
     width: 100%;
 }
 
-.cardsProdutos{
+.cardsProdutos {
     display: flex;
     margin-bottom: 22px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .titleProdutos {
+        font-size: 35px;
+        color: #090C20;
+        font-weight: 900;
+        height: 100px;
+        margin-top: 40px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .titleProdutos {
+        font-size: 25px;
+        color: #090C20;
+        font-weight: 900;
+        height: 50px;
+        margin-top: 40px;
+        transition: 0.5s;
+    }
 }
