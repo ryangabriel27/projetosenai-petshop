@@ -313,7 +313,7 @@ export const PRODUTOS = [
         id: 38,
         foto: 'https://polipet.fbitsstatic.net/img/p/adaptil-difusor-com-refil-ceva-48ml-para-cachorros-96467/290470-4.jpg',
         nome: 'Adaptil Difusor',
-        categoria: 'Casa&Lazer',
+        categoria: 'Casa & Lazer',
         preco: 216.45,
         descricao: 'Com Refil Ceva 48ml para Cachorros'
       }
