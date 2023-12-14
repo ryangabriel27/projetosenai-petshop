@@ -226,7 +226,7 @@ export const PRODUTOS = [
     //peixes
     {
         id: 28,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-poytara-carpa-6x1-6-0kg-93975/287977-1.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-poytara-carpa-6x1-6-0kg-93975/287977-1.jpg',
         nome: 'Ração Poytara',
         categoria: 'Peixes',
         preco: 411.93,
@@ -234,7 +234,7 @@ export const PRODUTOS = [
       },
       {
         id: 29,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-nutral-para-peixes-carpas-4kg-91748/285737.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-nutral-para-peixes-carpas-4kg-91748/285737.jpg',
         nome: 'Ração Nutral para Peixes',
         categoria: 'Peixes',
         preco: 387.90,
@@ -242,7 +242,7 @@ export const PRODUTOS = [
       },
       {
         id: 30,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-tetra-tetramin-flakes-para-peixes-200gr-95948/289951.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-tetra-tetramin-flakes-para-peixes-200gr-95948/289951.jpg',
         nome: 'Ração Tetra Tetramin Flakes',
         categoria: 'Peixes',
         preco: 137.16,
@@ -250,7 +250,7 @@ export const PRODUTOS = [
       },
       {
         id: 31,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-poytara-carpa-6x1-1-5kg-93976/287978-1.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-poytara-carpa-6x1-1-5kg-93976/287978-1.jpg',
         nome: 'Ração Poytara',
         categoria: 'Peixes',
         preco: 129.06,
@@ -258,7 +258,7 @@ export const PRODUTOS = [
       },
       {
         id: 32,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-nutral-para-peixes-carpas-2kg-91746/285735.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-nutral-para-peixes-carpas-2kg-91746/285735.jpg',
         nome: 'Ração Nutral para Peixes',
         categoria: 'Peixes',
         preco: 228.51,
@@ -269,7 +269,7 @@ export const PRODUTOS = [
     
       {
         id: 33,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-megazoo-para-porquinho-da-india-com-5kg-97627/291676.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-megazoo-para-porquinho-da-india-com-5kg-97627/291676.jpg',
         nome: 'Ração Megazoo',
         categoria: 'Outros',
         preco: 324.54,
@@ -277,7 +277,7 @@ export const PRODUTOS = [
       },
       {
         id: 34,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-para-mini-coelho-500gr-88876/282862.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-para-mini-coelho-500gr-88876/282862.jpg',
         nome: 'Ração Alcon Club',
         categoria: 'Outros',
         preco: 40.77,
@@ -285,7 +285,7 @@ export const PRODUTOS = [
       },
       {
         id: 35,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-seca-megazoo-extrusada-para-hamsters-e-gerbils-3-0kg-99016/293078.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-seca-megazoo-extrusada-para-hamsters-e-gerbils-3-0kg-99016/293078.jpg',
         nome: 'Ração Seca Megazoo Extrusada',
         categoria: 'Outros',
         preco: 181.26,
@@ -293,7 +293,7 @@ export const PRODUTOS = [
       },
       {
         id: 36,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-para-roedores-500gr-89962/283948.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-para-roedores-500gr-89962/283948.jpg',
         nome: 'Ração Alcon Club',
         categoria: 'Outros',
         preco: 30.69,
@@ -301,11 +301,21 @@ export const PRODUTOS = [
       },
       {
         id: 37,
-        foto: 'https://polipet.fbitsstatic.net/img/p/racao-megazoo-para-coelhos-ornamentais-com-1-2kg-97625/291674.jpg?w=400&h=400&v=no-change&qs=ignore',
+        foto: 'https://polipet.fbitsstatic.net/img/p/racao-megazoo-para-coelhos-ornamentais-com-1-2kg-97625/291674.jpg',
         nome: 'Ração Megazoo',
         categoria: 'Outros',
         preco: 83.61,
         descricao: 'Para Coelhos Ornamentais com 1,2kg'
+      },
+
+      //casa e lazer
+      {
+        id: 38,
+        foto: 'https://polipet.fbitsstatic.net/img/p/adaptil-difusor-com-refil-ceva-48ml-para-cachorros-96467/290470-4.jpg',
+        nome: 'Adaptil Difusor',
+        categoria: 'Casa & Lazer',
+        preco: 216.45,
+        descricao: 'Com Refil Ceva 48ml para Cachorros'
       }
 ]
 
