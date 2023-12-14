@@ -19,26 +19,29 @@ body {
     transition: 0.5s;
 }
 
-.carrinho-icon{
+.carrinho-icon {
     transition: 0.5s;
 }
-.carrinho-icon:hover{
+
+.carrinho-icon:hover {
     scale: 1.5;
     transition: 0.5s;
 }
 
-.coracao-icon{
+.coracao-icon {
     transition: 0.5s;
 }
-.coracao-icon:hover{
+
+.coracao-icon:hover {
     scale: 1.5;
     transition: 0.5s;
 }
 
-.user-icon{
+.user-icon {
     transition: 0.5s;
 }
-.user-icon:hover{
+
+.user-icon:hover {
     scale: 1.5;
     transition: 0.5s;
 }
@@ -68,7 +71,7 @@ body {
     transition: 0.5s;
 }
 
-.logo:hover{
+.logo:hover {
     scale: 1.5;
     transition: 0.5s;
 }
@@ -87,6 +90,7 @@ body {
     background: #FFF;
     transition: 0.5s;
 }
+
 .icon-pesquisa {
     align-items: center;
     height: 2rem;
@@ -144,6 +148,10 @@ body {
     flex-shrink: 0;
 }
 
+.logo2 {
+    display: none;
+}
+
 /* --- Categorias --- */
 .links {
     display: flex;
@@ -168,7 +176,7 @@ body {
     transition: 0.5s;
 }
 
-.animais-link:hover{
+.animais-link:hover {
     background-color: #243387;
     border-radius: 8px;
     padding: 0px 20px;
@@ -197,39 +205,67 @@ body {
         transition: 0.5s;
     }
 }
+
 @media screen and (max-width:1080px) {
     .barra-de-pesquisa {
         width: 19.0625rem;
         transition: 0.5s;
     }
-    .links{
+
+    .links {
         width: 100%;
         justify-content: space-evenly;
     }
+
     .animais-link {
         font-size: 12px;
     }
+
     .categorias {
         justify-content: center;
-    }    
+    }
 }
 
 @media screen and (max-width:800px) {
+
+    .menuBg {
+        display: flex;
+    }
+
     .barra-de-pesquisa {
         display: none;
         transition: fallDown 0.5s;
     }
+
     .icon-pesquisa {
         display: flex;
         transition: fallDown 0.5s;
     }
+
     .categorias {
-        display: none;
+        display: block;
     }
 }
 
 @media screen and (max-width:480px) {
-    .logo{
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+    .logo2 {
+        display: block;
+    }
+
+    .barra-de-pesquisa {
+        display: none;
+    }
+
+    .icon-pesquisa {
         display: none;
     }
 }

@@ -2,6 +2,8 @@ import React from "react";
 import './header.css';
 import { Link } from 'react-router-dom';
 import logo from './img/logo_e_wordmark.png';
+import logo2 from './img/logo2.png';
+import menuHamburguer from './img/menu-icon.png';
 
 export default function Header() {
     return (
@@ -9,7 +11,8 @@ export default function Header() {
             <nav class="cabecalho">
                 <Link to="/">
                     <div class="logo">
-                        <img src={logo} alt="logo"></img>
+                        <img src={logo} alt="logo1" className="logo1" />
+                        <img src={logo2} alt="logo2" className="logo2" />
                     </div>
                 </Link>
                 <div class="icon-pesquisa">
