@@ -8,12 +8,15 @@ A Pet&Repet é uma loja que trabalha com e-Commerce e, também, com consultas ve
 
 ## 🎨 Paleta de cores:
 <h1>
+    <img src="./imageDocumentacao/brandinggif.gif">
     <img src="./imageDocumentacao/paleta.png">
     </br>
     <img src="./imageDocumentacao/branding1.png">
 </h1>
 
 ## Construção do site:
+
+### - **[Trello (Lista de tarefas)](https://trello.com/b/CsCmGqpp/projeto-site-completo-petshop)**
 
 ### Briefing:
 Em primeiro momento os membros do grupo fizeram um **briefing**, que é um levantamento de ideias, afim de criar a estética primária do site, seu público-alvo, seus objetivos, etc... Dessa forma, definimos que o site é para um publico jovem-adulto entre 18 a 30 anos, estlizidado com cores vivas, sendo bem atrativo, chamativo e caracteristico. O objetivo da Pet&Repet é tornar mais próxima a ideia do comprador e vendedor, tendo em vista que o beneficio é um, o bem-estar do pet, independente do animal que seja.
@@ -55,7 +58,7 @@ Após um levantamento das principais ideias, o grupo, foi iniciar o processo de 
 Após fazer os protótipos decidimos dar mais um passo na criação das páginas, porém antes disso definimos o framework que utilizariamos para o projeto, o escolhido foi o React. O React foi escolhido por conta de alguns fatores como a sua componentização, sua reatividade e eficiência, sua grande abundância de recursos, etc... Também definimos nossa tecnologia para o back-End, e para isso escolhemos o NodeJS que é feito em javaScript.
 
 ### Resultado :
-Por fim, o resultado nos deixou satisfeitos com nosso trabalho, nos certificamos de deixar todas as páginas responsivas, visualmente agradavéis, atrativas e acessíveis.
+Por fim, o resultado nos deixou satisfeitos com nosso trabalho, nos certificamos de deixar todas as páginas responsivas, visualmente agradavéis, atrativas e de fácil uso e navegabilidade.
 
 <h1>
     <img src="./imageDocumentacao/teste2.gif">
