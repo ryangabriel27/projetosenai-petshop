@@ -14,7 +14,7 @@ import Carrinho from './components/carrinho/carrinho.jsx';
 
 function App() {
   return <>
-    <ShopContextProvider>
+    <ShopContextProvider> 
       {/* -- Routing das headers -- */}
       <Routes>
         <Route path='/' element={<Header />} />

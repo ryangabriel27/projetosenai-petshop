@@ -5,10 +5,14 @@ import { CartItem } from './cartItem'
 import './carrinho.css'
 
 export default function Carrinho() {
+    /**
+     * Este componente representa a página do carrinho de compras.
+     * Utiliza o useContext para acessar as funções e estados definidos no contexto ShopContext.
+     * Renderiza os itens no carrinho usando o componente CartItem.
+     */
+    const { itensCarrinho, getValorTotal } = useContext(ShopContext); // useContext é utilizado para acessar as funções e estados definidos no contexto ShopContext.
 
-    const { cartItems, getTotalCartAmount } = useContext(ShopContext);
-
-    const totalAmount = getTotalCartAmount();
+    const valorTotal = getValorTotal(); // Calcula o valor total do carrinho chamando a função getValorTotal do contexto.
 
     return (
         <div className="container">
@@ -26,9 +30,9 @@ export default function Carrinho() {
                     </div>
                 </div>
                 <div className="cart-items">
-                    {PRODUTOS.map((item) => {
-                        if (cartItems[item.id] !== 0) {
-                            return <CartItem data={item} />
+                    {PRODUTOS.map((item) => { // Mapeia todos os produtos e renderiza apenas aqueles que têm quantidade maior que 0 no carrinho
+                        if (itensCarrinho[item.id] !== 0) {
+                            return <CartItem data={item} /> // Renderiza o componente CartItem para cada item no carrinho
                         }
                     })}
                 </div>
@@ -43,8 +47,8 @@ export default function Carrinho() {
                 </div>
                 <div className="form-group">
                     <h3>Escolha a forma de entrega:</h3>
-                    <label className="labelRadio"><input type="radio" className="inputRadio" name="radio"/>Entrega</label>
-                    <label className="labelRadio"><input type="radio" className="inputRadio" name="radio"/>Retirar na loja</label>
+                    <label className="labelRadio"><input type="radio" className="inputRadio" name="radio" />Entrega</label>
+                    <label className="labelRadio"><input type="radio" className="inputRadio" name="radio" />Retirar na loja</label>
                 </div>
                 <div className="form-group">
                     <h3>Cupom de desconto:</h3>
@@ -54,7 +58,7 @@ export default function Carrinho() {
                     <h3>Resumo do pedido:</h3>
                     <div className="row-valorTotal">
                         <p id="strong">Valor Total</p>
-                        <p>R$ {totalAmount}</p>
+                        <p>R$ {valorTotal}</p>
                     </div>
                     <div className="row-prazoDeEntrega">
                         <p id="strong">Prazo de entrega</p>
@@ -63,7 +67,7 @@ export default function Carrinho() {
                 </div>
                 <div className="total">
                     <h3>Total</h3>
-                    <h3 className="total-preco">R$ {totalAmount}</h3>
+                    <h3 className="total-preco">R$ {valorTotal}</h3>
                 </div>
                 <button>Finalizar compra</button>
             </div>
